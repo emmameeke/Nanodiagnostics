@@ -699,35 +699,66 @@ nav {
     line-height: 1.6;
 }
 
-.PET-contrast {
+.pet-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #011A5B;
     color: white;
-}
-
-.PET-contrast-content0 {
-    max-width: 800px;
-    font-size: 1.5rem;
-    line-height: 1.6;
     text-align: center;
+    padding: 20px;
 }
 
-.PET-contrast h2 {
-    max-width: 800px;
+.pet-section-title {
     font-size: 2rem;
-    line-height: 1.6;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.PET-contrast h3 {
-    max-width: 800px;
+.pet-section-text {
     font-size: 1.5rem;
     line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.pet-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.pet-text-left {
+    text-align: left;
+    max-width: 400px;
+}
+
+.pet-image {
+    width: 200px;
+    height: 200px;
+    background: gray;
+}
+
+.pet-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
 }
 
 .POC {
@@ -772,9 +803,9 @@ nav {
     position: relative;
     width: 100%;
     text-align: center;
-    background: url('medicalstudentimage.jpg') center/cover no-repeat;
+    background: url('loc-background.png') center/cover no-repeat;
     background-attachment: fixed;
-    color: white;
+    color: black;
 }
 
 .Loc-content {
@@ -860,41 +891,115 @@ nav {
     line-height: 1.6;
 }
 
-.lfa {
-    position: relative;
+.pcr-image {
     width: 100%;
+    max-width: 600px;
     height: auto;
+}
+
+.lfa {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
     background: white;
     color: black;
+    text-align: center;
 }
 
 .lfa-content {
     max-width: 800px;
     font-size: 1.5rem;
     line-height: 1.6;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .lfa h2 {
-    max-width: 800px;
     font-size: 2rem;
-    line-height: 1.6;
     font-weight: bold;
 }
 
 .lfa h3 {
-    max-width: 800px;
     font-size: 1.5rem;
     line-height: 1.6;
 }
+
+.lfa-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.image-text-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    gap: 20px;
+}
+
+.image-text-row h3 {
+    flex: 1;
+    text-align: left;
+}
+
+.lfa-small-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+}
   
+.wearable {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('wearable-background.jfif') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.wearable-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.wearable-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.wearable-content h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
 .CGM {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -983,49 +1088,6 @@ nav {
 
 .sticky-image3{
     opacity: 1;
-}
-
-.wearable {
-    background: lightgray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    background: url('wearable-background.jfif') center/cover no-repeat;
-    background-attachment: fixed;
-    color: white;
-}
-
-.wearable-content {
-    top: 0;
-    width: 40%;
-    height: auto;
-    background: rgba(238, 238, 238, 0.89);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-    font-size: 1.5rem;
-    line-height: 1.6;
-}
-
-
-.wearable-content h2 {
-    color: #0037FF;
-    font-weight: bold;
-}
-
-.wearable-content h3 {
-    color: black;
-    max-width: 90%;
-    font-size: 1.2rem;
-    line-height: 1.5;
 }
 
 .CGM-content {
@@ -1263,7 +1325,7 @@ nav {
 }
 
 .nanopore2 {
-    background: lightgray;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1279,7 +1341,6 @@ nav {
     top: 0;
     width: 40%;
     height: auto;
-    background: rgba(238, 238, 238, 0.89);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1303,15 +1364,29 @@ nav {
     line-height: 1.5;
 }
 
-.nanobeads {
+.Nanobeads {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
-    color: black;
+    background: #011A5B;
+    color: white;
+}
+
+.nanobeads-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
 }
 
 .nanobeads h2 {
