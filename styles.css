@@ -1,11 +1,16 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial';
+    font-family: 'Calibri';
     box-sizing: border-box;
     justify-content: center;
     align-items:center;
     text-align: center;
+}
+
+.h3 {
+    font-size: 1.5rem;
+    
 }
 
 /* General navbar styling */
@@ -111,6 +116,7 @@ nav {
     font-weight: bolder;
     position: relative;
     top: -10%;
+    font-family: 'Lexend deca';
 }
 
 .hero-content h2 {
@@ -349,7 +355,7 @@ nav {
 .MRI {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: auto;
     display: flex;
     align-items: center; /* Centers content vertically */
     justify-content: center; /* Centers content horizontally */
@@ -570,6 +576,26 @@ nav {
     line-height: 1.6;
 }
 
+.mricons {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    background: #EAF4FC;
+    color: white;
+}
+
+.mricons-content {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+
 .CT {
     position: relative;
     width: 100%;
@@ -694,6 +720,17 @@ nav {
     line-height: 1.5;
 }
 
+.ctcons {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    background: #EAF4FC;
+    color: white;
+}
+
 .PET {
     position: relative;
     width: 100%;
@@ -706,7 +743,7 @@ nav {
 }
 
 .PET-content0 {
-    max-width: 800px;
+    max-width: 70%;
     font-size: 1.5rem;
     line-height: 1.6;
     text-align: center;
@@ -717,12 +754,38 @@ nav {
     font-size: 2rem;
     line-height: 1.6;
     font-weight: bold;
+    margin: 20px 0;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pet-image {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.rest-headers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .PET h3 {
     max-width: 800px;
     font-size: 1.5rem;
     line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 .pet-section {
@@ -785,6 +848,17 @@ nav {
     font-size: 1.5rem;
     text-align: center;
     padding: 20px;
+}
+
+.petcons {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    background: #011A5B;
+    color: white;
 }
 
 .POC {
