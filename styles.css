@@ -1093,7 +1093,7 @@ nav {
     align-items: center; /* Centers content vertically */
     justify-content: center; /* Centers content horizontally */
     text-align: center;
-    background: url('Medicine background.webp') center/cover no-repeat;
+    background: url('Medicine background.jpg') center/cover no-repeat;
     background-attachment: fixed;
     color: white;
 }
