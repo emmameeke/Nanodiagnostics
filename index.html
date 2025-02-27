@@ -10,7 +10,7 @@
 
     <nav>
         <ul class="navbar">
-            <li><a href="#hero">NoHome</a></li>
+            <li><a href="#hero">Home</a></li>
             <li class="dropdown">
                 <a href="#Imaging">Imaging</a>
                 <ul class="dropdown-menu">
@@ -272,14 +272,22 @@
         </div>
     </section>
 
-    <section class="PET-contrast">
-        <div class="PET-contrast0">
-            <h2>PET: Nanoparticle Contrast Agents</h2>
-            <h3>Whilst PET scans provide insight into metabolic processes, they lack anatomical detail. Contrast agents enhance visualisation, improving differentiation between tissues and aiding in tumour detection, as metabolic activity can vary between malignant and healthy cells. Alongside this, PET contrast agents can direct the radioactive tracer to specific tissues/regions of interest.
-            Traditionally, the radioactively labelled biological molecules mentioned above have been used as contrast agents, however, PET imaging has been improved by the development of alternative contrast agents alongside the tracers. 
-            Gold nanoparticles (as explored in CT imaging), can be functionalised with biological markers to improve tissue specificity and enhance overall image resolution.
-            </h3>
+    <section class="pet-section">
+        <h2 class="pet-section-title">PET: Nanoparticle Contrast Agents</h2>
+        
+        <h3 class="pet-section-text">Whilst PET scans provide insight into metabolic processes, they lack anatomical detail...</h3>
+        <h3 class="pet-section-text">Traditionally, the radioactively labelled biological molecules mentioned above...</h3>
+
+        <div class="pet-row">
+            <h3 class="pet-text-left">When labelled with radioactive isotopes, quantum dots can also be used in PET imaging...</h3>
+            <div class="pet-image" id="clickable-image" style="background: url('marble.png') no-repeat center/cover;"></div>
         </div>
+        
+        <div class="pet-row">
+            <div class="pet-image" style="background: url('marble.png') no-repeat center/cover;"></div>
+            <h3 class="pet-section-text">When excited by light, quantum dots (semiconductor nanoparticles) emit stable fluorescence...</h3>
+        </div>
+        <div class="pet-overlay" id="overlay">Additional information about PET imaging. Click anywhere to close.</div>
     </section>
 
     <section class="Quantum Dots">
@@ -309,7 +317,7 @@
             <img src="lap on chip.jpg">
             <h3>Unlike traditional laboratory setting, LoC devices do not require mechanical pumps to drie liquid flow and instead rely on capillary action. This natural manipulations of external fluids allows for an energy-efficient portable system.</h3>
             <h3>Additionally, lab-on-a-chip devices can be paired with smartphones, allowing patients or healthcare workers to upload and analyse diagnostic data in real time.</h3>
-            <img scr="lab on chip phone.jpg">
+            <img src="lap on chip phone.jpg">
             <h3>Microchannels can also be coated with functionalised nanomaterials that selectively bind to specific disease biomarkers, enabling the detection of low-concentration biomarkers that conventional assays might miss.</h3>
             <h3>This can be shown as LoC devices use optical detection to analyse samples, such as fluroescence and absorbance spectroscopy. By detecting changes in light emission and absorption, biomolecular interactions can be actively tracked. Fluorescence-based detection works by exciting specific molecules with a light source, causing them to emit light at a longer wavelength. This emitted signal is then measured, providing a quantifiable indication of a target biomarker. Absorbance spectroscopy works by measuring how much light is absorbed by a sample at specific wavelengths.</h3>
 
@@ -321,7 +329,7 @@
             <h2>LoC: PCR Testing</h2>
             <h3>LoC devices are particulary valuable for infectious disease detection, where rapid pathogen identification is crucial for outbreak control. These systems incorporate miniaturised thermal cycling mechanisms to perform polymerase chain reaction (PCR), allowing amplification of viral or bacterial genetic material directly at the point of care</h3>
             <h3>Traditional PCR requires bulky thermal cyclers, but nanoparticle-enhanced LoC PCR significantly improves heat transfer efficiency. By using materials with high thermal conductivity, such as gold or silver nanoparticles, (they contain large number of "free electrons" that can readily move throughout the metal, efficiently transfering thermal energy) these systems enable rapid heating and cooling, reducing reaction times and increasing sensitivity. This makes LoC PCR particularly effective for diagnosing infections such as tuberculosis, influenza, and COVID-19 in minutes instead of hours.</h3>
-            <img scr="pcradvantage.jpg">
+            <img src="pcr advantage vs disavantage.jpg" class="pcr-image">
             <h3>On the other hand, LoC devices face manufacturing challenges due to the precision required in fabricating microfluidic channels and integrating multiple detection mechanisms. Variations in sample viscosity, temperature, or surface interactions can impact performance, requiring careful calibration for reliable application. Furthermore, while nano-enhanced PCR-based testing within LoC systems significantly improves speed and efficiency, its integration into miniaturised platforms presents scalability issues. Precise thermal regulation at the nanoscale is difficult to achieve consistently across different device designs. Optimising their concentration and distribution is essential, as excessive nanoparticle use can interfere with enzyme function.</h3>
         </div>
     </section>
@@ -329,14 +337,16 @@
     <section class="lfa">
         <div class="lfa-content">
             <h2>Lateral flow assay (LFA)</h2>
-            <h3>Nano biosensors are a key advancement in PoC diagnostics, offering rapid and highly sensitive detection of biological markers such as proteins. One example is enzyme-linked immunosorbent assays (ELISA) which is known for its high sensitivity and specificity but is impractical for rapid, on-site testing as it requires specialised equipment, multiple processing steps, and skilled workers. Therefore lateral flow assays (LFAs) offer a simple and inexpensive alternative for diagnostics. </h3>
-            <h3>LFAs are widely used for conditions like malaria and HIV but their sensitivity can be limited making it difficult to detect low-concentration biomarkers in early disease stages. Nanotechnology has enhanced the capabilites of lateral flow assays, incorporating gold, silver, or other nanomaterials to amplify detection signals, allowing for disease identification even at low biomarker concentrations. </h3>
-            <h3> Similar to LoC systems, LFAs ely on capillary action, but instead of using microchannels, they utilise porous materials such as nitrocellulose strips through which liquid samples diffuse evenly across</h3>
-            <img scr="lateral flow.jpg">
+            <h3>Nano biosensors are a key advancement in PoC diagnostics, offering rapid and highly sensitive detection of biological markers such as proteins. One example is enzyme-linked immunosorbent assays (ELISA) which is known for its high sensitivity and specificity but is impractical for rapid, on-site testing as it requires specialised equipment, multiple processing steps, and skilled workers. Therefore lateral flow assays (LFAs) offer a simple and inexpensive alternative for diagnostics.</h3>
+            <h3>LFAs are widely used for conditions like malaria and HIV but their sensitivity can be limited making it difficult to detect low-concentration biomarkers in early disease stages. Nanotechnology has enhanced the capabilites of lateral flow assays, incorporating gold, silver, or other nanomaterials to amplify detection signals, allowing for disease identification even at low biomarker concentrations.</h3>
+            <h3>Similar to LoC systems, LFAs ely on capillary action, but instead of using microchannels, they utilise porous materials such as nitrocellulose strips through which liquid samples diffuse evenly across</h3>
+            <img src="lateral flow.jpg" class="lfa-image">
             <h3>At the test line, specific antibodies or DNA probes are anchored in place to capture only the target biomarker. When nanoparticles are attached to additional antibodies or DNA strands, they stick to the captured biomarker, forming small clumps at the test site. This accumulation of nanoparticles causes a visible colour change due to a process called plasmon resonance.</h3>
-            <h3>This plasmonic coupling shifts the absorption spectrum toward longer wavelengths, reducing the reflection of red light, and making the colour appear dark blue or purple. This shift enhances detection sensitivity by amplifying the contrast, making even low-concentration biomarkers more easily identifiable. Unlike conventional dyes, which can fade or degrade, plasmonic nanoparticles provide a stable and highly visible signal without requiring additional reagents.</h3>
+            <div class="image-text-row">
+                <h3>This plasmonic coupling shifts the absorption spectrum toward longer wavelengths, reducing the reflection of red light, and making the colour appear dark blue or purple. This shift enhances detection sensitivity by amplifying the contrast, making even low-concentration biomarkers more easily identifiable. Unlike conventional dyes, which can fade or degrade, plasmonic nanoparticles provide a stable and highly visible signal without requiring additional reagents.</h3>
+                <img src="covidtest.png" class="lfa-small-image">
+            </div>
             <h3>While nanoparticle-enhanced biosensors offer improved sensitivity and rapid detection, their ability to quantify biomarker concentrations precisely has its limitations, restricting their use in cases requiring highly specific or continuous measurements. Moreover, maintaining stability and reproducibility across different sample types poses a challenge, as environmental factors such as humidity, pH fluctuations, and non-specific binding can affect signal reliability.</h3>
-
         </div>
     </section>
 
@@ -441,7 +451,7 @@
     </div>
 
     <section class="nanopore2">
-        <div class="nanopores2-content">
+        <div class="nanopore2-content">
             <h3>The ability to analyse long DNA or RNA sequences in a single read is particularly valuable for identifying structural variations, such as insertions, deletions, and rearrangements, which are often missed by traditional short-read sequencing methods. In oncology, nanopore sequencing can detect rare cancer-driving mutations, enabling highly personalised treatment strategies. In infectious disease control, its rapid, label-free sequencing allows real-time identification of pathogens, improving outbreak surveillance and response strategies.</h3>
             <h3>Researchers are continuously refining the size and charge properties of synthetic nanopores to enhance sequencing precision, while machine learning models are being trained to better interpret the electrical signals produced by different nucleotides.</h3>
             <h3>While nanopore sequencing offers real-time genetic analysis and reduces errors associated with sample preparation, the new technology currently has a higher error rate compared to the traditional sequencing methods it aims to improve.  Signal noise from ionic current fluctuations, difficulties in distinguishing between closely related nucleotide sequences, and challenges in accurately reading repetitive or modified DNA structures all require further improvement. Moreover, despite the cost of nanopore sequencing devices remaining an obstacle to wider clinical use, it is still an important advancement in providing a long-term framework to improve genetic testing.</h3>
@@ -538,19 +548,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
