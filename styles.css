@@ -1073,18 +1073,6 @@ nav {
     margin-top: 560px;
 }
 
-.mission-content h2 {
-    color: #0037FF;
-    font-weight: bold;
-}
-
-.mission-content h3, .mission-content2 h3, .mission-content2 h3 {
-    color: black;
-    max-width: 90%;
-    font-size: 1.2rem;
-    line-height: 1.5;
-} 
-
 .medicine {
     position: relative;
     width: 100%;
