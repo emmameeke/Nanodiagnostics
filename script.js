@@ -98,9 +98,9 @@ function showPopup(side) {
   document.getElementById('right-popup').style.display = 'none';
   
   if (side === 'left') {
-      document.getElementById('left-popup').style.display = 'block';
+      document.getElementById('left-popup').style.display = 'flex';
   } else {
-      document.getElementById('right-popup').style.display = 'block';
+      document.getElementById('right-popup').style.display = 'flex';
   }
 }
 
@@ -109,15 +109,21 @@ function closePopup() {
   document.getElementById('right-popup').style.display = 'none';
 }
 
-function openModal(id) {
-  document.getElementById(id).style.display = 'flex';
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'flex';
 }
-function closeModal(id) {
-  document.getElementById(id).style.display = 'none';
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
 }
 
 function toggleReferences() {
-  document.getElementById("references-box").style.display = "flex";
+  const referencesBox = document.getElementById("references-box");
+  if (referencesBox.style.display === "none" || referencesBox.style.display === "") {
+      referencesBox.style.display = "flex";
+  } else {
+      referencesBox.style.display = "none";
+  }
 }
 
 function closeReferences(event) {
