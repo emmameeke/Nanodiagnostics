@@ -11,38 +11,39 @@
     <nav>
         <ul class="navbar">
             <li><a href="#hero">Home</a></li>
+            <li><a href="#properties">Key Properties</a></li>
             <li class="dropdown">
-                <a href="#Imaging">Imaging</a>
+                <a href="#imaging">Imaging</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#MRI">MRI</a></li>
-                    <li><a href="#CT">CT</a></li>
-                    <li><a href="#PET">PET</a></li>
+                    <li><a href="#mri">MRI</a></li>
+                    <li><a href="#ct">CT</a></li>
+                    <li><a href="#pet">PET</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#POC">Diagnostics</a>
+                <a href="#poc">Diagnostics</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#LOC">LOC</a></li>
-                    <li><a href="#LFA">LFA</a></li>
+                    <li><a href="#loc">LOC</a></li>
+                    <li><a href="#lfa">LFA</a></li>
                     <li class="dropdown-side">
-                        <a href="#">Wearable</a>
+                        <a href="#wearable">Wearable</a>
                         <ul class="side-menu">
-                            <li><a href="#CGM">CGMs</a></li>
-                            <li><a href="#Smartbandages">Bandages</a></li>
+                            <li><a href="#cgm">CGMs</a></li>
+                            <li><a href="#bandages">Smart Dressings</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#medicine">Medicine</a>
+                <a href="#medicine">Genetic Testing</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#nanopore">Nanopore</a></li>
-                    <li><a href="#nanobead">Nanobead</a></li>
+                    <li><a href="#nanopore">Nanopore Sequencing</a></li>
+                    <li><a href="#nanobeads">Magnetic Nanobead</a></li>
                 </ul>
             </li>
+            <li><a href="#risks">Risks</a></li>
         </ul>
     </nav>
-    
 
     <section class="hero">
         <img src="spinning-dna-blue.webp" alt="Spinning DNA" class="hero-img">
@@ -51,12 +52,13 @@
         <div class="hero-content">
             <h1> Nanodiagnostics</h1>
             <h2>Revolutionising Healthcare</h2>
-            <h3>By Emma and ..</h3>
+            <h3>E.Meeke, A.Pucci, M.Riley, B.Robertson, G.Summerskill</h3>
         </div>
     </section>
 
     <section class="intro">
-        <div class="intro-content">Imagine detecting diseases at their earliest stages — before symptoms even arise — and delivering faster, more accurate diagnostics transforming patient care. Through nanotechnology, scientists are crafting tools that work at the molecular level, offering breakthroughs in early detection, precise treatments, and improved outcomes. Join us as we explore how these tiny innovations are redefining what’s possible in modern medicine.</div>
+        <div class="intro-content">
+            <h3>Imagine detecting diseases at their earliest stages — before symptoms even arise — and delivering faster, more accurate diagnostics transforming patient care. Through nanotechnology, scientists are crafting tools that work at the molecular level, offering breakthroughs in early detection, precise treatments, and improved outcomes. Join us as we explore how these tiny innovations are redefining what’s possible in modern medicine.</h3></div>
     </section>
 
     <!-- Image Transition Section -->
@@ -78,7 +80,7 @@
         <h3>It is precisely at this scale that biology itself operates: DNA molecules, proteins, and cells function in the nanoscale world, making it the perfect size for technologies to interact seamlessly with these systems.</h3>
     </section>
 
-    <section class="section10">
+    <section class="section10" id="properties">
         <h2>A Look Inside</h2>
         <h3>The defining feature of nanoparticles is their unique physical and chemical properties, which arise due to their small size.</h3>
         <div class="image-row10">
@@ -95,49 +97,53 @@
         </div>
     
         <div id="left-popup" class="popup10">
-            <h2>Magnetic nanoparticles are superparamagnetic</h2>
-            <h3>This means they only become magnetised in the presence of an external magnetic field.</h3>
-            <h3>Large magnetics, such as fridge magnets are ferromagnetic. In ferromagnetic particles magnetic domains form where froups of atoms align their tiny atomic magnets (spins) in the same direction. Even when the external field is removed, these domains remain aligned, making the material permanently magnet.</h3>
-            <div class="image-row-magnet">
-                <img src="ferromagnetic no.jpg" alt="No Magnet">
-                <img src="ferromagnetic yes.jpg" alt="Magnet Applied">
-                <img src="ferromagnetic no.jpg" alt="Magnet Removed">
+            <div class="modal-content">
+                <h2>Magnetic nanoparticles are superparamagnetic</h2>
+                <h3>This means they only become magnetised in the presence of an external magnetic field.</h3>
+                <h3>Large magnetics, such as fridge magnets are ferromagnetic. In ferromagnetic particles magnetic domains form where froups of atoms align their tiny atomic magnets (spins) in the same direction. Even when the external field is removed, these domains remain aligned, making the material permanently magnet.</h3>
+                <div class="image-row-magnet">
+                    <img src="ferromagnetic no.jpg" alt="No Magnet">
+                    <img src="ferromagnetic yes.jpg" alt="Magnet Applied">
+                    <img src="ferromagnetic no.jpg" alt="Magnet Removed">
+                </div>
+                <div class="text-row-magnet">
+                    <h3>No Magnet</h3>
+                    <h3>Magnet Applied</h3>
+                    <h3>Magnet Removed</h3>
+                </div>
+                <h3>When at the nanoscale the material is so small that it consists of just one magnetic domain, meaning all atomic spins must align together</h3>
+                <h3>However, at this tiny scale, thermal energy is strong enough to disrupt the alignments, causing tthe nanoparticle to lose it magnetisation when no external field is applied.</h3>
+                <div class="image-row-magnet">
+                    <img src="superparamagnetic no.jpg" alt="No Magnet">
+                    <img src="superparamagnetic yes.jpg" alt="Magnet Applied">
+                    <img src="superparamagnetic no.jpg" alt="Magnet Removed">
+                </div>
+                <div class="image-row-magnet">
+                    <h3>No Magnet</h3>
+                    <h3>Magnet Applied</h3>
+                    <h3>Magnet Removed</h3>
+                </div>
+                <span class="close" onclick="closePopup()">Click anywhere to close</span>
             </div>
-            <div class="text-row-magnet">
-                <h3>No Magnet</h3>
-                <h3>Magnet Applied</h3>
-                <h3>Magnet Removed</h3>
-            </div>
-            <h3>When at the nanoscale the material is so small that it consists of just one magnetic domain, meaning all atomic spins must align together</h3>
-            <h3>However, at this tiny scale, thermal energy is strong enough to disrupt the alignments, causing tthe nanoparticle to lose it magnetisation when no external field is applied.</h3>
-            <div class="image-row-magnet">
-                <img src="superparamagnetic no.jpg" alt="No Magnet">
-                <img src="superparamagnetic yes.jpg" alt="Magnet Applied">
-                <img src="superparamagnetic no.jpg" alt="Magnet Removed">
-            </div>
-            <div class="image-row-magnet">
-                <h3>No Magnet</h3>
-                <h3>Magnet Applied</h3>
-                <h3>Magnet Removed</h3>
-            </div>
-            <button onclick="closePopup()">Close</button>
         </div>
-
-        <div id="right-popup" class="popup">
-            <p>Right image clicked: This reveals more information about optical properties.</p>
-            <button onclick="closePopup()">Close</button>
+    
+        <div id="right-popup" class="popup10">
+            <div class="modal-content">
+                <p>Right image clicked: This reveals more information about optical properties.</p>
+                <span class="close" onclick="closePopup()">Click anywhere to close</span>
+            </div>
         </div>
     </section>
 
-    <section class="imaging">
+    <section class="imaging" id="imaging">
         <div class="imaging-content">
-            <h2>Imaging: Illuminating the Unseen</h2>
+            <h2>Imaging: Illuminating the unseen</h2>
             <h3>Diagnostic imaging has long been a cornerstone of modern medicine, offering a non-invasive window into the human body and has been indispensable in diagnosing and monitoring diseases. However, these methods often face limitations in resolution and contrast, particularly when distinguishing between similar tissues. Nanotechnology offers solutions to these challenges, introducing advanced contrast agents and multifunctional tools that enhance image clarity and diagnostic accuracy.</h3>
         </div>
     </section>
     
 
-    <section class="MRI">
+    <section class="MRI" id="mri">
         <div class="mri-content">
             <h2>Magnetic Resonance Imaging (MRI)</h2>
             <h3>MRI uses powerful magnetic fields and radio waves to create highly detailed 3D images of the body, with 360(0) coverage. This non-invasive imaging technique is useful for imaging area where the soft tissue is abundant, such as the brain and muscles. </h3>
@@ -217,7 +223,7 @@
         </div>
     </section>
 
-    <section class="CT">
+    <section class="CT" id="ct">
         <div class="CT-content0">
             <h2>Computed Tomography (CT)</h2>
             <h3>CT is an imaging procedure that combines X-ray technology with computer processing to produce detailed cross-sectional images of the body. During a CT scan, a narrow X-ray beam rotates around the body, capturing data over 360°. A computer then processes this data to generate detailed images of bones, blood vessels, and soft tissues. </h3>
@@ -256,7 +262,7 @@
         </div>
     </div>
 
-    <section class="PET">
+    <section class="PET" id="pet">
         <div class="PET-content0">
             <h2>Positron Emission Tomography</h2>
             <h3>PET is a powerful imaging modality that provides insight into metabolic processes within tissues. Unlike anatomical imaging techniques such as CT and MRI which visualise structural details, PET enables the detection of biochemical processes at a molecular level. This allows diseases to be detected before physical abnormalities appear.  </h3>
@@ -294,14 +300,14 @@
         
     </section>
 
-    <section class="POC">
+    <section class="POC" id="poc">
         <div class="poc-content">
             <h2>Point-of-care Diagnostics</h2>
             <h3>POC diagnostics are reshaping how and where healthcare is delivered. By enabling quick, accurate testing outside of traditional laboratories, POC technologies provide critical tools for diagnosing and monitoring diseases in a wide range of settings. Whether used in remote clinics, emergency rooms, or even at home, these innovations enhance accessibility and timeliness of care. Nanotechnology has been a significant driver of this shift, contributing to the development of portable devices that are smaller, faster, and more sensitive than their conventional counterparts.</h3>
         </div>
     </section>
 
-    <section class="LoC">
+    <section class="LoC" id="loc">
         <div class="Loc-content">
             <h2>Lab-on-a-chip System</h2>
             <h3>Traditional diagnostic methods rely on large laboratory equipment to process biological samples. Disease diagnosis often involves multiple steps, including sample collection, preparation, analysis, and detection, each requiring different instruments and trained personnel. Patient samples must be transported from healthcare facilities to specialised sites where tests can be conducted. This setup does not accommodate time-sensitive diagnostic needs and is particularly disadvantageous during infectious outbreaks. Moreover, conventional diagnostic centres require sophisticated infrastructure and expensive reagents, making them impractical for resource-limited and remote locations</h3>
@@ -324,7 +330,7 @@
         </div>
     </section>
 
-    <section class="PCR">
+    <section class="PCR" id="pcr">
         <div class="PCR-content">
             <h2>LoC: PCR Testing</h2>
             <h3>LoC devices are particulary valuable for infectious disease detection, where rapid pathogen identification is crucial for outbreak control. These systems incorporate miniaturised thermal cycling mechanisms to perform polymerase chain reaction (PCR), allowing amplification of viral or bacterial genetic material directly at the point of care</h3>
@@ -334,7 +340,7 @@
         </div>
     </section>
 
-    <section class="lfa">
+    <section class="lfa" id="lfa">
         <div class="lfa-content">
             <h2>Lateral flow assay (LFA)</h2>
             <h3>Nano biosensors are a key advancement in PoC diagnostics, offering rapid and highly sensitive detection of biological markers such as proteins. One example is enzyme-linked immunosorbent assays (ELISA) which is known for its high sensitivity and specificity but is impractical for rapid, on-site testing as it requires specialised equipment, multiple processing steps, and skilled workers. Therefore lateral flow assays (LFAs) offer a simple and inexpensive alternative for diagnostics.</h3>
@@ -356,14 +362,14 @@
         </div>
     </section>
 
-    <div class="wearable">
+    <div class="wearable" id="wearable">
         <div class="wearable-content">
             <h2>Wearable Devices</h2>
             <h3>Traditional health monitoring relies on periodic measurements taken during clinic visits, limiting the ability to track real-time physiological changes. For instance, parameters such as hydration, stress, and cardiovascular are assessed intermittently through external monitors or laboratory tests. Although these methods provide valuable insights, they only offer snapshots of a patient’s health rather than continuous data, making it difficult to detect rapid changes or subtle trends over time. </h3>
         </div>
     </div>
 
-    <section class="CGM">
+    <section class="CGM" id="cgm">
         <div class="CGM-content0">
             <h2>Continuous glucose monitors</h2>
             <h3>Wearable devices can extend diagnostics into continuous patient monitoring by integrating nanoscale sensors. Traditionally, diabetic patients monitor their blood sugar levels through finger-prick tests at set intervals. However, nano-enhanced continuous glucose monitors use nanomaterial-based electrochemical sensors to measure glucose levels in interstitial fluid, eliminating the need for frequent blood sampling.</h3>
@@ -387,7 +393,7 @@
         </div>
     </div>
 
-    <section class="bandages">
+    <section class="bandages" id="bandages">
         <div class="bandages-content">
             <h2>Smart Dressings</h2>
             <h3>smart bandages are upgraded dressings that not only cover wounds but also monitor them. Nanomaterial-based sensors can detect pH shifts, bacterial growth, and inflammatory responses.</h3>
@@ -403,14 +409,14 @@
         </div>
     </section>
 
-    <section class="medicine">
+    <section class="medicine" id="medicine">
         <div class="medicine-content">
             <h2>Genetic testing: Advancing Precision Treatment</h2>
             <h3>Genetic testing plays a crucial role in personalised medicine, offering insights into a patient’s unique genetic makeup to guide diagnosis and treatment. Advances in nanotechnology have significantly enhanced the precision and accessibility of these tests, enabling the rapid identification of genetic mutations, pathogens, and disease markers. By integrating nanoscale tools, genetic testing is moving beyond the laboratory, bringing complex analyses closer to clinical and point-of-care settings.</h3> 
         </div>  
     </section>
     
-    <section class="nanopore">
+    <section class="nanopore" id="nanopore">
         <div class="nanopore-content0">
             <h2>Nanopore Sequencing</h2>
             <h3>Genetic testing has traditionally relied on PCR and fluorescence-based assays to detect specific DNA sequences. While these methods are highly sensitive, they require multiple amplification steps to detect low-abundance genetic material, increasing the risk of contamination, false positives, and signal degradation. Another major challenge lies in efficiently isolating target DNA from biological samples. Standard techniques such as centrifugation, filtration, or chemical precipitation require specialised laboratory equipment and long processing times</h3>
@@ -458,7 +464,7 @@
         </div>
     </section>
 
-    <section class="Nanobeads">
+    <section class="Nanobeads" id="nanobeads">
         <div class="nanobeads-content">
             <h2>DNA Magnetic Nanobeads</h2>
             <h3>DNA magnetic nanobeads offer a more efficient and selective method for genetic testing compared to traditional PCR by simplifying DNA isolation and enabling highly specific detection of genetic sequences.  Unlike conventional extraction methods that involve multiple purification steps, nanobeads enable rapid and direct DNA separation from complex biological samples.</h3>
@@ -491,7 +497,7 @@
         </div>
     </div>
 
-    <section class="risks">
+    <section class="risks" id="risks">
         <div class="risks-content">
             <h2>Nanoparticle Risks</h2>
             <h3>As with any new technology, the health and environmental risks of nanoparticles have yet to be fully defined, and cautionary measures are necessary. While nanoparticles offer revolutionary advancements, it's vital not to overlook the ethical and safety concerns coupled with their application.</h3>
@@ -512,10 +518,10 @@
             <h3>Looking ahead, the true potential of nanotechnology lies in its adaptability. As research continues, we can expect tools that are smaller yet more powerful, smarter in their ability to target specific biomarkers, and more efficient in terms of cost and scalability. The integration of nanotechnology with artificial intelligence is also set to improve how medical professionals interpret and act on diagnostic information.</h3>
             <h3>Despite the challenges of cost, manufacturing complexity, and regulatory approval, the progress seen so far suggests a bright trajectory. The current improvements regarding nanotechnology bring us closer to diagnostics that are not only more effective but also more equitable, ensuring that life-saving insights reach patients regardless of their location or resources.</h3>
             <h3>We hope our website serves as an initial platform for collaboration between medical professionals and scientists, connecting these innovations from the research laboratory to the clinic. Although the journey is ongoing, the path forward is paved with opportunity, grounded in our shared commitment to advance healthcare for everyone.</h3>
-            
+    
             <button class="references-btn" onclick="toggleReferences()">References</button>
         </div>
-
+    
         <div id="references-box" class="references-box" onclick="closeReferences(event)">
             <div class="references-content">
                 <h2>References</h2>
@@ -542,7 +548,6 @@
                 </ul>
             </div>
         </div>
-
     </section>
 
     <script src="script.js"></script>
