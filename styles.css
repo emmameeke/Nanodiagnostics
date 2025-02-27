@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial';
     box-sizing: border-box;
     justify-content: center;
     align-items:center;
@@ -83,6 +83,7 @@ nav {
     display: block;
 }
 
+
 .hero { 
     position: relative;
     height: 100vh;
@@ -90,7 +91,6 @@ nav {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 2rem;
     text-align: center;
 }
 
@@ -107,18 +107,18 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 7.5rem;
+    font-weight: bolder;
     position: relative;
-     top: -10%;
+    top: -10%;
 }
 
 .hero-content h2 {
-    font-size: 2rem;
+    font-size: 3.75rem;
 }
 
 .her0-content h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .hero-img {
@@ -135,7 +135,7 @@ nav {
 .intro {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: auto;
     display: flex;
     align-items: center; /* Centers content vertically */
     justify-content: center;
@@ -148,6 +148,8 @@ nav {
     font-size: 1.5rem;
     line-height: 1.6;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom:50px;
 }
 
 /* Image Transition Section */
@@ -254,7 +256,7 @@ nav {
 .section10 h2, .section11 h3 {
     margin-bottom: 20px;
 }
-.image-row10{
+.image-row10 {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -286,44 +288,27 @@ nav {
 .popup10 {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
     background: white;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     text-align: center;
-    max-width: 500px;
-    max-height: 80vh; /* Limit the height */
-    overflow-y: auto;
+    max-width: 80%;
+    max-height: 80vh;
+    overflow-y: auto; /* Add scroll for overflow content */
 }
-.popup10 button {
-    margin-top: 10px;
-    padding: 5px 10px;
+.close {
     cursor: pointer;
-}
-.image-row-magnet {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+    display: block;
     margin-top: 10px;
-}
-.image-row-magnet img {
-    width: 100px;
-    height: 100px;
-}
-
-.text-row-magnet {
-    display: flex;
-    justify-content: center; /* Ensures text aligns with images */
-    gap: 100px;
-    margin-top: 5px;
-}
-
-.text-row-magnet h3 {
-    width: 100px; /* Same width as images */
-    text-align: center; /* Centers text below each image */
 }
 
 .imaging {
@@ -406,7 +391,7 @@ nav {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 0vh;
+    height: 100vh;
 }
 
 .sticky-video {
@@ -437,7 +422,7 @@ nav {
     padding: 20px;
     text-align: center;
     z-index: 1;
-    margin-top: 220px;
+    margin-top: 0px;
 }
 
 .MRI-content2 {
@@ -452,7 +437,7 @@ nav {
     padding: 20px;
     text-align: center;
     z-index: 1;
-    margin-top: 300px;
+    margin-top: 10px;
 }
 
 .MRI-content3 {
@@ -467,7 +452,7 @@ nav {
     padding: 20px;
     text-align: center;
     z-index: 1;
-    margin-top: 380px;
+    margin-top: 100px;
 }
 
 .MRI-content4 {
@@ -482,7 +467,7 @@ nav {
     padding: 20px;
     text-align: center;
     z-index: 1;
-    margin-top: 460px;
+    margin-top: 300px;
 }
 
 
@@ -491,6 +476,16 @@ nav {
     max-width: 90%;
     font-size: 1.2rem;
     line-height: 1.5;
+}
+
+.section16 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #EAF4FC;
+    color: black;
 }
 
 .section16 {
@@ -531,11 +526,42 @@ nav {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    max-width: 80%;
+    max-height: 80vh;
+    overflow-y: auto; /* Add scroll for overflow content */
 }
 .close {
     cursor: pointer;
     display: block;
     margin-top: 10px;
+}
+
+.section16 h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+.image-row-magnet {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 10px;
+}
+.image-row-magnet img {
+    width: 100px;
+    height: 100px;
+}
+
+.text-row-magnet {
+    display: flex;
+    justify-content: center; /* Ensures text aligns with images */
+    gap: 100px;
+    margin-top: 5px;
+}
+
+.text-row-magnet h3 {
+    width: 100px; /* Same width as images */
+    text-align: center; /* Centers text below each image */
 }
 
 .section16 h3 {
@@ -1403,7 +1429,7 @@ nav {
 }
 
 .nanobead-images {
-    background: lightgray;
+    background: #011A5B;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1566,7 +1592,6 @@ nav {
     line-height: 1.6;
 }
 
-
 .future-content h2 {
     color: #0037FF;
     font-weight: bold;
@@ -1605,7 +1630,6 @@ nav {
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
@@ -1618,6 +1642,8 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 50%;
     color: black;
+    max-height: 80vh; /* Limit the height */
+    overflow-y: auto; /* Add scroll for overflow content */
 }
 
 .references-content ul li a {
@@ -1630,9 +1656,9 @@ nav {
 }
 
 .references-content h2 {
-   text-align: center;
+    text-align: center;
 }
 
 .references-content ul {
     text-align: left;
- }
+}
