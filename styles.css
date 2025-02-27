@@ -1,0 +1,1562 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+/* General navbar styling */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown styles */
+.dropdown-menu,
+.side-menu {
+    list-style: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    top: 100%;
+    left: 0;
+    display: none;
+    min-width: max-content;
+    width:100%;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Side dropdown */
+.side-menu {
+    left: 100%;
+    top: 0;
+    display: none;
+}
+
+.dropdown-side:hover .side-menu {
+    display: block;
+}
+
+.hero { 
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 55, 255, 0.27);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+     top: -10%;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+}
+
+.her0-content h3 {
+    font-size: 1.5rem;
+}
+
+.hero-img {
+    grid-column: 1 / -1;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    background: #011A5B;
+    color: white;
+}
+
+.intro-content {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Image Transition Section */
+.section-2-images {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('medicalstudentimage.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.mission-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.mission-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.mission-content h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.section5 {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #011A5B;
+    color: white;
+}
+
+.section5 h3 {
+    max-width: 50%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.section8 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: white;
+    background: url('human head.jpg') center/cover no-repeat;
+}
+
+.imageoverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 55, 255, 0.27);
+    z-index: 0;
+}
+
+.section8 h3 {
+    position:relative;
+    max-width: 25%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    left: 400px
+}
+
+
+
+.section10 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    background-color: #EAF4FC;
+}
+
+.section10 h2, .section11 h3 {
+    margin-bottom: 20px;
+}
+.image-row10{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.container10 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-top: 20px;
+}
+.img11 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.image10 {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.text-box10 {
+    max-width: 300px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.popup10 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    max-height: 80vh; /* Limit the height */
+    overflow-y: auto;
+}
+.popup10 button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.image-row-magnet {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 10px;
+}
+.image-row-magnet img {
+    width: 100px;
+    height: 100px;
+}
+
+.text-row-magnet {
+    display: flex;
+    justify-content: center; /* Ensures text aligns with images */
+    gap: 100px;
+    margin-top: 5px;
+}
+
+.text-row-magnet h3 {
+    width: 100px; /* Same width as images */
+    text-align: center; /* Centers text below each image */
+}
+
+.imaging {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    text-align: center;
+    background: url('imaging background.webp') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+
+/* Wrapping the content for proper alignment */
+.imaging-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imaging h2 {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.imaging h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.MRI {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+.mri-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MRI h2 {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.MRI h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+/* Video Transition Section */
+.section-2-videos {
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400vh; /* Increased height for smooth transitions */
+    position: relative;
+}
+
+.sticky-container2 {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 0vh;
+}
+
+.sticky-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.video1 {
+    opacity: 1; /* The first video is visible initially */
+}
+
+
+.MRI-content1 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 220px;
+}
+
+.MRI-content2 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 300px;
+}
+
+.MRI-content3 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 380px;
+}
+
+.MRI-content4 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 460px;
+}
+
+
+.MRI-content1 h3, .MRI-content2 h3, .MRI-content3 h3, .MRI-content4 h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.section16 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #EAF4FC;
+    color: black;
+}
+
+.container16 {
+    max-width: 600px;
+}
+.side-by-side {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.side-by-side img {
+    width: 150px;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.close {
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+}
+
+.section16 h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.CT {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #011A5B;
+    color: white;
+}
+
+.CT-content0 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.CT h2 {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.CT h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.CT2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #011A5B;
+    color: white;
+}
+
+.CT2-content {
+    position:relative;
+    max-width: 50%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    left: 50px
+}
+
+.CT-contrast {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EAF4FC;
+    color: black;
+}
+
+.CT-contrast-content0 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.CT-contrast h2 {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.CT-contrast h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.ctgold {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('gold background.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.ctgold-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.ctgold-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.ctgold-content h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.PET {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+}
+
+.PET-content0 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.PET h2 {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.PET h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.PET-contrast {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #011A5B;
+    color: white;
+}
+
+.PET-contrast-content0 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.PET-contrast h2 {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.PET-contrast h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.POC {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    color: white;
+    background: url('diagnostics background.webp') center/cover no-repeat;
+    background-attachment:fixed;
+}
+
+.poc-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.POC h2 {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.POC h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.LoC {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('medicalstudentimage.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.Loc-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.LoC-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.LoC-content h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.LoC2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EAF4FC;
+    color: black;
+}
+
+.loc2-content {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.LoC2 h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.PCR {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #011A5B;
+    color: white;
+}
+
+.PCR-content {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.PCR h2 {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.PCR h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.lfa {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+}
+
+.lfa-content {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.lfa h2 {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.lfa h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+  
+.CGM {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EAF4FC;
+    color: black;
+}
+
+.CGM-content0 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.CGM h2 {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.CGM h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+  
+.CGM-images {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300vh;
+    position: relative;
+}
+
+.bandages {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #011A5B;
+    color: #011A5B;
+}
+
+.bandages-content {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.bandages h2 {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.bandages h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.sticky-container3 {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 0vh;
+}
+
+.sticky-image3, .sticky-image4, .sticky-image5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.sticky-image3{
+    opacity: 1;
+}
+
+.wearable {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('wearable-background.jfif') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.wearable-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.wearable-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.wearable-content h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.CGM-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 220px;
+}
+
+.CGM-content2 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 400px;
+}
+
+.CGM-content3 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 560px;
+}
+
+.mission-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.mission-content h3, .mission-content2 h3, .mission-content2 h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+} 
+
+.medicine {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    text-align: center;
+    background: url('imaging background.webp') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.medicine-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medicine h2 {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.medicine h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.nanopore {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('nanopore sequencing real life.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: black;
+    overflow:hidden;
+}
+
+.nanopore-content0 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.nanopore-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.nanopore-content h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Video Transition Section */
+.nanopore-videos {
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400vh; /* Increased height for smooth transitions */
+    position: relative;
+}
+
+.sticky-container4 {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.sticky-video2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.video5 {
+    opacity: 1; /* The first video is visible initially */
+}
+
+
+.nanopore-content1 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 220px;
+}
+
+.nanopore-content2 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 300px;
+}
+
+.nanopore-content3 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 380px;
+}
+
+.nanopore-content4 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 460px;
+}
+
+
+.nanopore-content1 h3, .nanopre-content2 h3, .nanopore-content3 h3, .nanopore-content4 h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.nanopore2 {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.nanopore2-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.nanopore2-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.nanopore2-content h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.nanobeads {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+}
+
+.nanobeads h2 {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.nanobeads h3 {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.nanobead-images {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300vh;
+    position: relative;
+}
+
+.sticky-container5 {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 0vh;
+}
+
+.sticky-image6, .sticky-image7, .sticky-image8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.sticky-image6{
+    opacity: 1;
+}
+
+.nanobead-content1 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.nanobead-content2 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 200px;
+}
+
+.nanobead-content3 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 300px;
+}
+.nanobead-content4 {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 400px;
+}
+
+.risks {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('risk-background.png') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.risks-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.risks-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.risks-content h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.future {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('Spinning-DNA-Blue.webp') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.future-content {
+    top: 0;
+    width: 40%;
+    height: auto;
+    background: rgba(238, 238, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.future-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.future-content h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.future-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 55, 255, 0.27);
+    z-index: 0;
+}
+
+.references-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #0037FF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.references-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.references-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    color: black;
+}
+
+.references-content ul li a {
+    color: blue;
+    text-decoration: none;
+}
+
+.references-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.references-content h2 {
+   text-align: center;
+}
+
+.references-content ul {
+    text-align: left;
+ }
