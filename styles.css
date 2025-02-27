@@ -1073,17 +1073,30 @@ nav {
     margin-top: 560px;
 }
 
+.mission-content h2 {
+    color: #0037FF;
+    font-weight: bold;
+}
+
+.mission-content h3, .mission-content2 h3, .mission-content2 h3 {
+    color: black;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+} 
+
 .medicine {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background: url('Medicine background.jpg') center/cover no-repeat;
-    background-attachment: fixed;
+    background: white;
     color: white;
+    background: url('Medicine background.jpg') center/cover no-repeat;
+    background-attachment:fixed;
 }
 
 .medicine-content {
@@ -1093,13 +1106,13 @@ nav {
     align-items: center;
 }
 
-.medicine h2 {
+.medicine-content h2 {
     font-size: 2rem;
     line-height: 1.6;
     font-weight: bold;
 }
 
-.medicine h3 {
+.medicine-content h3 {
     font-size: 1.5rem;
     line-height: 1.6;
 }
