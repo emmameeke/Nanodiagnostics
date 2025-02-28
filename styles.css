@@ -288,11 +288,11 @@ nav {
     background: #EAF4FC;
     color: black;
     text-align: center;
-    padding-bottom:150px;
+    padding-bottom: 150px;
 }
 
 .section10-content {
-    max-width: 600px;
+    max-width: 800px;
     font-size: 1.5rem;
     line-height: 1.6;
     display: flex;
@@ -322,14 +322,14 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height:auto;
+    height: auto;
     gap: 20px;
 }
 
 .image-text-row h3 {
     flex: 1;
     text-align: left;
-    width:40%
+    width: 40%;
 }
 
 .lfa-small-image {
@@ -337,37 +337,38 @@ nav {
     max-width: 300px;
     height: auto;
 }
-  
+
 .shrink image {
-    width:100px;
-    height:auto;
+    width: 100px;
+    height: auto;
 }
 
 .section10 h2, .section11 h3 {
     margin-bottom: 20px;
 }
+
 .image-row10 {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-bottom: 100px;
-    width:100%
+    width: 100%;
 }
+
 .image-row11 {
     display: flex;
     justify-content: center;
     gap: 200px;
     margin-bottom: 20px;
-    width:100%;
-    height:300px;
-    
+    width: 100%;
+    height: 300px;
 }
 
 .img11 {
     width: auto;
     height: 150px;
     object-fit: cover;
-    margin-top:70px;
+    margin-top: 70px;
 }
 
 .img12 {
@@ -377,9 +378,8 @@ nav {
 }
 
 .shrink-image {
-    width:500px;
-    margin-top:130px
-    
+    width: 500px;
+    margin-top: 130px;
 }
 
 .image10 {
@@ -388,11 +388,13 @@ nav {
     cursor: pointer;
     border-radius: 10px;
 }
+
 .text-box10 {
     max-width: 300px;
     font-size: 18px;
     font-weight: bold;
 }
+
 .popup10 {
     display: none;
     position: fixed;
@@ -404,6 +406,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 .modal-content {
     background: white;
     padding: 20px;
@@ -413,6 +416,7 @@ nav {
     max-height: 80vh;
     overflow-y: auto; /* Add scroll for overflow content */
 }
+
 .close {
     cursor: pointer;
     display: block;
@@ -705,6 +709,10 @@ nav {
     line-height: 1.6;
 }
 
+.yay {
+    width: 70%;
+}
+
 .mricons {
     position: relative;
     width: 100%;
@@ -727,40 +735,50 @@ nav {
     justify-content: center;
     background: #011A5B;
     color: white;
+    text-align: center; /* Center text horizontally */
 }
 
-.CT-content{
-    max-width: 800px;
+.CT-content {
+    max-width: 1100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
 }
 
 .CT h2 {
-    max-width: 800px;
     font-size: 3rem;
     line-height: 1.6;
     font-weight: bolder;
+    width: 100%;
 }
 
 .CT h3 {
-    max-width: 800px;
     font-size: 1.5rem;
     line-height: 1.6;
+    width: 100%;
 }
 
 .CTPhysicsimage {
-    width: 100%;
-    height: 100vh;
+    width: 50%;
     max-width: 600px;
     height: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
 }
 
 .CTimage-text-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     max-width: 1100px;
     gap: 20px;
+}
+
+.headers {
+    width: 50%;
 }
 
 .CT-contrast {
@@ -866,7 +884,7 @@ nav {
 }
 
 .PET-content0 {
-    width:800px;
+    width: 800px;
     line-height: 1.6;
     text-align: center;
 }
@@ -883,16 +901,64 @@ nav {
     max-width: 800px;
     font-size: 1.5rem;
     line-height: 1.6;
-
 }
 
 .petimage-text-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     max-width: 1100px;
-    gap: 50px;
+    gap: 20px;
+    position: relative;
+}
+
+.tracer-image {
+    width: 400px;
+    height:700px;
+    z-index: 1;
+}
+
+.petheaders {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+    margin-left: -50px; /* Adjust this value to control the overlap */
+}
+
+.beta-icon {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index:4;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    max-height: 80vh;
+    overflow-y: auto; /* Add scroll for overflow content */
+}
+
+.close {
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
 }
 
 .PET2 {
@@ -1029,49 +1095,6 @@ nav {
     line-height: 1.5;
 }
 
-.LoC {
-    background: lightgray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    background: url('loc-background.png') center/cover no-repeat;
-    background-attachment: fixed;
-    color: black;
-}
-
-.Loc-content {
-    top: 0;
-    width: 40%;
-    height: auto;
-    background: rgba(238, 238, 238, 0.89);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-    font-size: 1.5rem;
-    line-height: 1.6;
-}
-
-
-.LoC-content h2 {
-    color: #0037FF;
-    font-weight: bold;
-}
-
-.LoC-content h3 {
-    color: black;
-    max-width: 90%;
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
 .loc2 {
     position: relative;
     width: 100%;
@@ -1090,24 +1113,24 @@ nav {
     text-align: center;
 }
 
-.LoC2 h3 {
+.loc2 h3 {
     max-width: 800px;
     font-size: 1.5rem;
     line-height: 1.6;
 }
 
 .expand {
-    width:500px;
-    margin-left:-50px;
+    width: 500px;
+    margin-left: -50px;
 }
 
 .laminaricon {
-    width:200px;
+    width: 200px;
 }
 
 .opticwhite {
-    width:300px;
-    margin-left:-200px
+    width: 300px;
+    margin-left: -200px;
 }
 
 .laminarimage-text-row {
@@ -1121,16 +1144,44 @@ nav {
 .laminarimage-text-row h3 {
     flex: 1;
     text-align: left;
-    min-width:300px;
+    min-width: 300px;
 }
 
 .phone {
-    margin-left:-200px
+    margin-left: -200px;
 }
 
 .last {
-    margin-left:100px;
+    margin-left: 100px;
     width: 300px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    max-height: 80vh;
+    overflow-y: auto; /* Add scroll for overflow content */
+}
+
+.close {
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
 }
 
 .PCR {
