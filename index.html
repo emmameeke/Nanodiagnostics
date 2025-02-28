@@ -10,25 +10,25 @@
 
     <nav>
         <ul class="navbar">
-            <li><a href="#hero">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#properties">Key Properties</a></li>
             <li class="dropdown">
                 <a href="#imaging">Imaging</a>
                 <ul class="dropdown-menu">
                     <li><a href="#mri">MRI</a></li>
-                    <li><a href="#ct">CT</a></li>
+                    <li><a href="#CT">CT</a></li>
                     <li><a href="#pet">PET</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#poc">Diagnostics</a>
+                <a href="#poc">Point-of-Care</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#loc">LOC</a></li>
-                    <li><a href="#lfa">LFA</a></li>
+                    <li><a href="#loc">Lab-on-a-Chip</a></li>
+                    <li><a href="#lfa">Lateral Flow Assay</a></li>
                     <li class="dropdown-side">
-                        <a href="#wearable">Wearable</a>
+                        <a href="#wearable">Wearable Devices</a>
                         <ul class="side-menu">
-                            <li><a href="#cgm">CGMs</a></li>
+                            <li><a href="#cgm">Continuous Glucose Monitors</a></li>
                             <li><a href="#bandages">Smart Dressings</a></li>
                         </ul>
                     </li>
@@ -45,7 +45,7 @@
         </ul>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <img src="spinning-dna-blue.webp" alt="Spinning DNA" class="hero-img">
         <div class="hero-overlay"></div>
 
@@ -81,23 +81,22 @@
     </section>
 
     <section class="section10" id="properties">
-        <h2>A Look Inside</h2>
-        <h3>The defining feature of nanoparticles is their unique physical and chemical properties, which arise due to their small size.</h3>
-        <h3>For example, at the nanoscale, materials can exhibit enhanced surface area, increased reactivity, or even entirely new optical or magnetic behaviours that do not appear at larger scales. </h3>
-        <div class="image-row10">
-            <img src="one cube.jpg" alt="Nanoparticle 1" class="img11">
-            <img src="arrow.jpg" alt="Nanoparticle 2" class="img11">
-            <img src="many cube.jpg" alt="Nanoparticle 3" class="img11">
-        </div>
-        <div class="container10">
-            <img src="magnetic icon.jpg" alt="Left Image" class="image10" onclick="showPopup('left')">
-            <div class="text-box10">
-                Nanoparticles exhibit different magnetic and optical properties.
+        <div class="section10-content">
+            <h2>A Look Inside</h2>
+            <h3>The defining feature of nanoparticles is their unique physical and chemical properties, which arise due to their small size.</h3>
+            <h3>For example, at the nanoscale, materials can exhibit enhanced surface area, increased reactivity, </h3>
+            <div class="image-row10">
+                <img src="one cube.jpg" alt="Nanoparticle 1" class="img12">
+                <img src="arrow.jpg" alt="Nanoparticle 2" class="img11">
+                <img src="many cube.jpg" alt="Nanoparticle 3" class="img12">
             </div>
-            <img src="optic icon.jpg" alt="Right Image" class="image10" onclick="showPopup('right')">
+            <div class="image-row11">
+                <img src="magnetic icon.jpg" alt="Left Image" class="image10" onclick="showPopup('left')">
+                <h3 class="bigger">or even entirely new optical or magnetic behaviours that do not appear at larger scales.</h3>
+                <img src="optic icon.jpg" alt="Right Image" class="image10" onclick="showPopup('right')">
+            </div>
+            <img src="properties.jpg" class="shrink-image">
         </div>
-        <img src="properties.jpg">
-    
         <div id="left-popup" class="popup10">
             <div class="modal-content">
                 <h2>Magnetic nanoparticles are superparamagnetic</h2>
@@ -131,13 +130,16 @@
     
         <div id="right-popup" class="popup10">
             <div class="modal-content">
-                <p>Right image clicked: This reveals more information about optical properties.</p>
+                <h3>Nanoparticles, particularly those made of noble metals like gold and silver, exhibit unique optical properties due to a phenomenon known as localised surface plasmon resonance.</h3>
+                <h3>Localised surface plasmon resonance occurs when light interacts with free electrons on the surface of nanoparticles, causing them to oscillate collectively. The size and shape of the nanoparticle determine the wavelength of light it absorbs and scatters. Gold nanoparticles used in lateral flow assays are typically around 20–40 nm in diameter, allowing them to absorb blue-green light (~450–550 nm) and reflect red light (~600–700 nm). When these nanoparticles bind to a target biomarker and cluster together, the spacing between them decreases, altering how their surface electrons interact with light.</h3>
+                <img src="quantumn dot grpah.png">
                 <span class="close" onclick="closePopup()">Click anywhere to close</span>
             </div>
         </div>
     </section>
 
     <section class="imaging" id="imaging">
+        <div class="imageoverlay"></div>
         <div class="imaging-content">
             <h2>Imaging: Illuminating the unseen</h2>
             <h3>Diagnostic imaging has long been a cornerstone of modern medicine, offering a non-invasive window into the human body and has been indispensable in diagnosing and monitoring diseases. However, these methods often face limitations in resolution and contrast, particularly when distinguishing between similar tissues. Nanotechnology offers solutions to these challenges, introducing advanced contrast agents and multifunctional tools that enhance image clarity and diagnostic accuracy.</h3>
@@ -170,42 +172,46 @@
         </div>
         <div class="MRI-content1">
             <h3>MRI utilises the magnetic properties of hydrogen nuclei (protons), which are abundant in water and fat, to produce images.</h3>
-            <h3>These nuclei behave like spinning tops, generating their own small magnetic fields</h3>
+            <h3>These nuclei behave like spinning tops, generating their own small magnetic fields.</h3>
         </div>
         <div class="MRI-content2">
             <h3>In the body, hydrogen protons align randomly but experience Zeeman splitting when placed in a strong magnetic field</h3>
-            <h3>They align either parallel or antiparallel to the field, depending on their spin (an intrinsic property related to angular momentum).  </h3>
+            <h3>This means they align either parallel or antiparallel to the field, depending on their spin (an intrinsic property related to angular momentum).  </h3>
             <h3>Because the lower energy parallel state is more stable, a slightly larger proportion of protons end up aligned this way. This imbalance of aligned protons creates a net magnetisation vector that forms the basis for MRI signal detection.</h3>
+            <img src="vector.jpg" class="vector">
         </div>
         <div class="MRI-content3">
             <h3>To generate a measurable response, a radiofrequency pulse is applied at a specific frequency, known as the Larmor frequency. When protons absorb this energy, some are excited from the lower-energy parallel state to the higher-energy antiparallel state, temporarily tipping the net magnetisation away from alignment with the external field.</h3>
+            <img src="vector 2.jpg" class="vector">
         </div>
         <div class="MRI-content4">
-            <h3>Once the pulse is turned off, the protons return to their original state, emitting electromagnetic signals in the process. Gradient coils vary the magnetic field in small increments, allowing for the scanning of different slices of the body. The intensity of the electromagnetic signals is detected by receiver coils and used to create cross-sectional images of internal structures which are combined into a 3D image.</h3>
+            <h3>Once the pulse is turned off, the protons return to their original state. The net magnetisation vector spirals back emitting electromagnetic signals.</h3>
+            <img src="vector 3.jpg" class="vector">
+            <h3>(when a conductor cuts through magnetic field lines as the field roates, it experiences a force that pushes electrons within the conductor creating an electrical current</h3>
+            <img src="rhr.jpg" class="vector">
+            <h3>Gradient coils vary the magnetic field in small increments, allowing for the scanning of different slices of the body. The intensity of the electromagnetic signals is detected by receiver coils and used to create cross-sectional images of internal structures which are combined into a 3D image.</h3>
         </div>
     </div>
 
-    <section class="section16">
-        <div class="container16">
+    <section class="mricontrast" >
+        <div class="mricontrast-content">
             <h2>MRI: Nanoparticle Contrast Agents</h2>
             <h3>Despite its ability to visualise tissues, MRI struggles to differentiate subtle differences, particularly between healthy and cancerous cells. This is because it relies on relaxation times — how quickly protons return to their resting states — which can be similar for many tissues.</h3>
             <h3>A solution to this problem is contrast agents, which are generally intravenously injected and temporarily alter the magnetic environment surrounding them.
                 Traditionally, gadolinium-based contrast agents are used in MRI. Gadolinium is a paramagnetic metal with unpaired electrons that influence the relaxation times of surrounding protons, improving tissue contrast. However, the toxicity risks of gadolinium necessitate the development of alternative contrast agents — particularly those using nanotechnology.
-                </h3>
+            </h3>
             <img src="mricontrast.png" alt="nanobeads" class="mricontrast-img">
             <h3>Two types of relaxation times influence this contrast:</h3>
-            <div class="side-by-side">
-                <div>
-                    <h3>T1 Relaxation: Describes how quickly protons realign with the external field after excitation</h3>
-                    <img src="t1icon.jpg" alt="T1 Relaxation" onclick="openModal('modalT1')">
-                </div>
-                <div>
-                    <h3>T2 Relaxation: Describes how fast protons lose synchronisation with one another, dirupting the MRI signal</h3>
-                    <img src="t2icon.jpg" alt="T2 Relaxation" onclick="openModal('modalT2')">
-                </div>
+            <div class="mri1image-text-row 1">
+                <h3>T1 Relaxation: Describes how quickly protons realign with the external field after excitation</h3>
+                <h3>T2 Relaxation: Describes how fast protons lose synchronisation with one another, dirupting the MRI signal</h3>
             </div>
+            <div class="mri2image-text-row">
+                <img src="t1icon.jpg" alt="T1 Relaxation" onclick="openModal('modalT1')" class="T">
+                <img src="t2icon.jpg" alt="T2 Relaxation" onclick="openModal('modalT2')" class="T">
+            </div>
+            <img src="mricons.jpg">
         </div>
-        
         <div id="modalT1" class="modal" onclick="closeModal('modalT1')">
             <div class="modal-content">
                 <h3>Paramagnetic nanoparticles, such as gadolinium-based nanostructures, enhance T1 relaxation. These materials contain unpaired electrons, which generate fluctuating local magnetic fields that interact with nearby hydrogen nuclei. This interaction increases the rate at which protons realign with the external field after excitation. Consequently, T1-weighted MRI images show areas with paramagnetic nanoparticles as brighter regions.</h3>
@@ -228,32 +234,25 @@
         </div>
     </section>
 
-    <section class="mricons">
-        <div class="mricons-content">
-            <img src="mricons.jpg">
-        </div>
-    </section>
-
-    <section class="CT" id="ct">
-        <div class="CT-content0">
+    <section class="CT" id="CT">
+        <div class="CT-content">
             <h2>Computed Tomography (CT)</h2>
             <h3>CT is an imaging procedure that combines X-ray technology with computer processing to produce detailed cross-sectional images of the body. During a CT scan, a narrow X-ray beam rotates around the body, capturing data over 360°. A computer then processes this data to generate detailed images of bones, blood vessels, and soft tissues. </h3>
             <h3>CT scanners are composed of three main parts: an X-ray tube that converts moving electrons (electricity) into X-ray photons, a gantry rotating around the patient (containing the X-ray tube and photon detectors), and a computer that processes signals from the detectors to generate the 2D cross-sectional images.</h3>
+            <div class="CTimage-text-row">
+                <div class="headers">
+                    <h3>The X-ray tube sends a beam of radiation through the body at multiple angles. As the photons pass through different tissues, the intensity of the X-ray changes (attenuates) depending on the density of the tissue it passes through. The atomic number of the elements in the tissue also influences attenuation. Elements with higher atomic numbers (e.g. calcium) have more electrons and are more likely to have photoelectric interactions with X-rays.</h3>
+                    <h3>The photoelectric effect is one of the primary interactions of X-ray photons with tissue. An X-ray photon collides with an inner-shell electron of an atom, transferring all its energy to eject the electron. This leads to absorption of the X-ray, which increases contrast in denser materials, such as bones and tissues containing contrast agents. Tissues like muscle and fat have lower atomic numbers and experience less absorption, appearing darker in the scan.</h3>
+                    <h3>After passing through the body, the attenuated X-rays are captured by detectors surrounding the body and are converted into digital signals. The intensity of the received X-ray reflects the unique composition of the area being scanned. The produced image is essentially a map of how much the X-ray was absorbed or scattered by tissues.</h3>
+                </div>
+                <img src="betadecay.jpg" class="CTPhysicsimage">
+            </div>
         </div>
-    </section>
-
-    <section class="CT2">
-        <div class="CT2-content">
-            <h3>The X-ray tube sends a beam of radiation through the body at multiple angles. As the photons pass through different tissues, the intensity of the X-ray changes (attenuates) depending on the density of the tissue it passes through. The atomic number of the elements in the tissue also influences attenuation. Elements with higher atomic numbers (e.g. calcium) have more electrons and are more likely to have photoelectric interactions with X-rays.</h3>
-            <h3>The photoelectric effect is one of the primary interactions of X-ray photons with tissue. An X-ray photon collides with an inner-shell electron of an atom, transferring all its energy to eject the electron. This leads to absorption of the X-ray, which increases contrast in denser materials, such as bones and tissues containing contrast agents. Tissues like muscle and fat have lower atomic numbers and experience less absorption, appearing darker in the scan.</h3>
-            <h3>After passing through the body, the attenuated X-rays are captured by detectors surrounding the body and are converted into digital signals. The intensity of the received X-ray reflects the unique composition of the area being scanned. The produced image is essentially a map of how much the X-ray was absorbed or scattered by tissues.</h3>
-        </div>
-        <img src="betadecay.jpg">
     </section>
 
     <section class="CT-contrast">
         <div class="CT-contrast-content0">
-            <h2>CT:Nanoparticle Contrast Agents</h2>
+            <h2>CT: Nanoparticle Contrast Agents</h2>
             <h3>The clarity of these images primarily depends on contrast. Soft tissues have similar attenuation coefficients and cannot be fully differentiated without contrast agents that temporarily alter their attenuation coefficient.</h3>
             <h3>Iodine-based compounds are the most commonly used contrast agents in CT imaging. Iodine has a relatively high atomic number (Z = 53), which increases the probability of photoelectric absorption, enhancing contrast between different tissues.</h3>
             <img src="ctcontrast.jpg" alt="nanobeads" class="ctcontrast-img">
@@ -262,11 +261,10 @@
 
     <div class="ctgold">
         <div class="ctgold-content">
-            <h2>Gold nanoparticles</h2>
             <h3>Gold nanoparticles have emerged as a highly effective alternative to traditional iodinated contrast agents due to their higher atomic number (Z = 79), which significantly enhances X-ray attenuation. Not only do they increase the likelihood of the photoelectric effect, they also combat some effects of Compton scattering. </h3>
             <h3>Compton scattering occurs when X-ray photons collide with outer electrons in tissue, causing the photons to change direction. This scattered radiation contributes to noise in the image and reduces contrast. At higher X-ray energies, Compton scattering becomes the dominant interaction, but gold’s high atomic number ensures strong attenuation and allows for clearer imaging.
             </h3>
-            <img src="compton.jpg">
+            <img src="compton.jpg" class="ctcontrastimg">
             <h3>Gold nanoparticles offer unique advantages due to their small size and customisable surface properties. They achieve strong X-ray absorption while remaining small enough to circulate efficiently in the bloodstream. They can be functionalised with biocompatible coatings to increase circulation time and prevent rapid clearance by the immune system. Modifying them further with ligands or antibodies makes them highly effective at detecting tumours.
             </h3>
             <h3>Despite being biologically inert, the high cost of gold nanoparticles remains a barrier to widespread adoption. Bismuth nanoparticles have an even higher atomic number (Z = 83) and are a cost-effective alternative to both iodine and gold. Ongoing research should prioritise the optimisation of their circulation time to balance effective imaging and safety.
@@ -282,94 +280,97 @@
 
     <section class="PET" id="pet">
         <div class="PET-content0">
-            <h2>Positron Emission Tomography</h2>
-            <div class="header-section">
-                <h3>PET is a powerful imaging modality that provides insight into metabolic processes within tissues. Unlike anatomical imaging techniques such as CT and MRI which visualise structural details, PET enables the detection of biochemical processes at a molecular level. This allows diseases to be detected before physical abnormalities appear.</h3>
-                <h3>The main components of a PET scanner include the gantry, which houses the detector system, scintillation crystals that convert incoming gamma photons into light, and photomultiplier tubes that transform this light into electrical signals.</h3>
-            </div>
-            <div class="pet-content1">
-                <img src="radioactive tracer.jpg" alt="PET Scanner Image" class="pet-image">
-                <div class="rest-headers">
+            <h2>Positron Emission Tomography (PET)</h2>
+            <h3>PET is a powerful imaging modality that provides insight into metabolic processes within tissues. Unlike anatomical imaging techniques such as CT and MRI which visualise structural details, PET enables the detection of biochemical processes at a molecular level. This allows diseases to be detected before physical abnormalities appear.</h3>
+            <h3>The main components of a PET scanner include the gantry, which houses the detector system, scintillation crystals that convert incoming gamma photons into light, and photomultiplier tubes that transform this light into electrical signals.</h3>
+            <div class="petimage-text-row">
+                <img src="radioactive tracer.jpg" class="lfa-small-image">
+                <div class="petheaders">
                     <h3>Before the scan, the patient is injected with a radioactive tracer, usually fluorodeoxyglucose, which has a chemical structure similar to that of glucose. The tracer is taken up by metabolising cells and accumulates in tissues. After waiting for the tracer to be distributed through the body, the patient is placed in the PET scanner. The radiation emitted by the tracer will then be detected. This process is beta-plus decay, where a positron is emitted.</h3>
+                    <img src="betaicon.jpg">
                 </div>
-                <img src="betaicon.jpg" alt="T2 Relaxation" onclick="openModal('modalT2')">
             </div>
         </div>
-        <div id="modalT2" class="modal" onclick="closeModal('modalT2')">
-            <div class="modal-PETcontent">
-                <h3>At the core of this process is positron emission, where the radioactive isotope in the tracer undergoes beta-plus decay, emitting a positron. The positron will travel a few millimetres before encountering an electron in the surrounding tissue.</h3>
-                <img src="beta2.jpg">
-                <h3>Positrons are the antiparticles of electrons, meaning this process causes the two to annihilate and convert their rest mass and energy into the form of two gamma photons. These high-energy photons travel in opposite directions, escaping the body and getting detected by a ring of scintillation crystals in the scanner. </h3>
-                <h3>When a photon strikes a crystal, the crystal becomes excited and a flash of visible light is emitted which is converted into an electrical signal by photomultiplier tools.
-                    To prevent false detections of these photons, the PET scanner relies on coincidence detection, where emissions are only detected when two photons arrive at two opposing detectors within a few nanoseconds of each other
-                </h3>
-                <h3>By analysing thousands of these photon pairs, a computer applies mathematical reconstruction techniques to develop a detailed 3D image of metabolic activity. Areas with higher tracer uptake, such as cancerous tumours with increased glucose metabolism, appear as bright regions on the final PET scan, providing valuable diagnostic information.</h3>
+        <div id="modalbeta" class="modal" onclick="closeModal('modalbeta')">
+            <div class="modal-content">
+                <h3>Paramagnetic nanoparticles, such as gadolinium-based nanostructures, enhance T1 relaxation. These materials contain unpaired electrons, which generate fluctuating local magnetic fields that interact with nearby hydrogen nuclei. This interaction increases the rate at which protons realign with the external field after excitation. Consequently, T1-weighted MRI images show areas with paramagnetic nanoparticles as brighter regions.</h3>
                 <span class="close">Click anywhere to close</span>
             </div>
         </div>
     </section>
 
-    
-
-    <section class="pet-section">
-        <h2 class="pet-section-title">PET: Nanoparticle Contrast Agents</h2>
-        
-        <h3 class="pet-section-text">Whilst PET scans provide insight into metabolic processes, they lack anatomical detail. Contrast agents enhance visualisation, improving differentiation between tissues and aiding in tumour detection, as metabolic activity can vary between malignant and healthy cells. Alongside this, PET contrast agents can direct the radioactive tracer to specific tissues/regions of interest.</h3>
-        <h3 class="pet-section-text">Traditionally, the radioactively labelled biological molecules mentioned above have been used as contrast agents, however, PET imaging has been improved by the development of alternative contrast agents alongside the tracers. 
-            Gold nanoparticles (as explored in CT imaging), can be functionalised with biological markers to improve tissue specificity and enhance overall image resolution.
-        </h3>
-        <div class="pet-row">
-            <h3 class="pet-text-left"></h3>
-            <div class="pet-image" id="clickable-image" style="background: url('optic incon.jpg') no-repeat center/cover;"></div>
-        </div>
-        
-        <div class="pet-row">
-            <img src="quantumdot">
-            <h3 class="pet-section-text">When labelled with radioactive isotopes, quantum dots can also be used in PET imaging, offering multimodal imaging that combines functional (through PET) and anatomical (through fluorescence) insights. They can be engineered by attaching specific ligands to target tissues or cells, enhancing the precision and sensitivity of PET scans.</h3>
-            <h3>When excited by light, quantum dots (semiconductor nanoparticles) emit stable fluorescence with colours dependent on their size, enabling simultaneous imaging of multiple biomarkers. Smaller quantum dots emit blue light, whilst larger ones emit red. Their brightness and stability outperform traditional fluorescent dyes, making them ideal for long-term tracking of molecular changes.</h3>
-        </div>
-        <div class="pet-overlay" id="overlay">Additional information about PET imaging. Click anywhere to close.</div>
-    </section>
-
-    <section>Ongoing research</section>
-
-    <section class="petcons">
-        <div class="petcons-content">
+    <section class="PET2">
+        <div class="PET2-content0">
+            <h2>PET: Nanoparticle Contrast Agents</h2>
+            <h3>Whilst PET scans provide insight into metabolic processes, they lack anatomical detail. Contrast agents enhance visualisation, improving differentiation between tissues and aiding in tumour detection, as metabolic activity can vary between malignant and healthy cells. Alongside this, PET contrast agents can direct the radioactive tracer to specific tissues/regions of interest.</h3>
+            <h3>Traditionally, the radioactively labelled biological molecules mentioned above have been used as contrast agents, however, PET imaging has been improved by the development of alternative contrast agents alongside the tracers. 
+                Gold nanoparticles (as explored in CT imaging), can be functionalised with biological markers to improve tissue specificity and enhance overall image resolution.
+            </h3>
+            <div class="image-text-row">
+                <h3>When labelled with radioactive isotopes, quantum dots can also be used in PET imaging, offering multimodal imaging that combines functional (through PET) and anatomical (through fluorescence) insights. They can be engineered by attaching specific ligands to target tissues or cells, enhancing the precision and sensitivity of PET scans.</h3>
+                <img src="quantumndot.jpg" class="lfa-small-image">
+            </div>
+            <div class="image-text-row">
+                <img src="optic navy.jpg" alt="Right Image" class="image10" onclick="showPopup('right')">
+                <h3>When excited by light, quantum dots (semiconductor nanoparticles) emit stable fluorescence with colours dependent on their size, enabling simultaneous imaging of multiple biomarkers. Smaller quantum dots emit blue light, whilst larger ones emit red. Their brightness and stability outperform traditional fluorescent dyes, making them ideal for long-term tracking of molecular changes. </h3>
+            </div>
             <img src="petcons.jpg">
         </div>
-    </section>
-
-    <section class="Quantum Dots">
-        
+        <div id="right-popup" class="popup10">
+            <div class="modal-content">
+                <h3>Nanoparticles, particularly those made of noble metals like gold and silver, exhibit unique optical properties due to a phenomenon known as localised surface plasmon resonance.</h3>
+                <h3>Localised surface plasmon resonance occurs when light interacts with free electrons on the surface of nanoparticles, causing them to oscillate collectively. The size and shape of the nanoparticle determine the wavelength of light it absorbs and scatters. Gold nanoparticles used in lateral flow assays are typically around 20–40 nm in diameter, allowing them to absorb blue-green light (~450–550 nm) and reflect red light (~600–700 nm). When these nanoparticles bind to a target biomarker and cluster together, the spacing between them decreases, altering how their surface electrons interact with light.</h3>
+                <img src="quantumn dot grpah.png">
+                <span class="close" onclick="closePopup()">Click anywhere to close</span>
+            </div>
+        </div>
     </section>
 
     <section class="POC" id="poc">
         <div class="poc-content">
             <h2>Point-of-care Diagnostics</h2>
-            <h3>POC diagnostics are reshaping how and where healthcare is delivered. By enabling quick, accurate testing outside of traditional laboratories, POC technologies provide critical tools for diagnosing and monitoring diseases in a wide range of settings. Whether used in remote clinics, emergency rooms, or even at home, these innovations enhance accessibility and timeliness of care. Nanotechnology has been a significant driver of this shift, contributing to the development of portable devices that are smaller, faster, and more sensitive than their conventional counterparts.</h3>
+            <h3>Point-of-care (PoC) diagnostics reshape how and where healthcare can be delivered. By enabling quick, accurate testing outside of traditional laboratories, PoC technologies offer the potential for disease diagnosis and monitoring in a wide range of settings. Whether used in remote clinics, emergency rooms, or even at home, these innovations allow for convenient, accessible care. Nanotechnology has facilitated this shift with the development of smaller, faster portable devices that are more sensitive than their conventional counterparts. </h3>
         </div>
     </section>
 
-    <section class="LoC" id="loc">
-        <div class="Loc-content">
-            <h2>Lab-on-a-chip System</h2>
-            <h3>Traditional diagnostic methods rely on large laboratory equipment to process biological samples. Disease diagnosis often involves multiple steps, including sample collection, preparation, analysis, and detection, each requiring different instruments and trained personnel. Patient samples must be transported from healthcare facilities to specialised sites where tests can be conducted. This setup does not accommodate time-sensitive diagnostic needs and is particularly disadvantageous during infectious outbreaks. Moreover, conventional diagnostic centres require sophisticated infrastructure and expensive reagents, making them impractical for resource-limited and remote locations</h3>
-            <h3> Nanotechnology addresses these challenges through lab-on-a-chip (LoC) systems by integrating all diagnostic steps into a single, compact device. These microfluidic-based systems use nanoscale fluid manipulation, biochemical sensing, and optical detection to process tiny sample volumes with minimal resources</h3>
+    <div class="locimages" id="loc">
+        <div class="locimage-content">
+            <h2>Lab-on-a-chip Systems (LoC)</h2>
+            <h3>Traditional diagnostic methods rely on large laboratory equipment to process biological samples. Disease diagnosis often involves multiple steps, including sample collection, preparation, analysis, and detection, each requiring different instruments and trained personnel. Patient samples must be transported from healthcare facilities to specialised sites where tests can be conducted. This setup does not accommodate time-sensitive diagnostic needs and is particularly disadvantageous during infectious outbreaks. Moreover, conventional diagnostic centres require sophisticated infrastructure and expensive reagents, making them impractical for resource-limited and remote locations.
+            </h3>
+            <h3>Nanotechnology addresses these challenges through lab-on-a-chip (LoC) systems by integrating all diagnostic steps into a single, compact device. These microfluidic-based systems use nanoscale fluid manipulation, biochemical sensing, and optical detection to process tiny sample volumes with minimal resources</h3>
         </div>
-    </section>
+    </div>
 
-    <section class="LoC2">
-        <div class="Loc2-content">
-            <h3>The core principle of LoC technology is microfluidics, the precise control of fluids in microscale environments. At this small scale, fluids exhibit the unique characteristics of laminar flow.</h3>
+    <section class="loc2">
+        <div class="loc2-content">
+            <div class="laminarimage-text-row">
+                <h3 class="expand">The core principle behind lab-on-a-chip technology is microfluidics, the precise control of fluids in microscale environments. At this small scale, fluids exhibit the unique characteristics of laminar flow, where fluids move in smooth, predictable layers without turbulence. Unlike in larger fluidic systems, where mixing occurs through chaotic eddies, microfluidic systems rely on diffusion — the gradual movement of molecules from areas of high to low concentration.</h3>
+                <img src="laminaricon.jpg" alt="T2 Relaxation" onclick="openModal('modallaminar')" class="laminaricon">
+            </div>
             <h3>This makes it possibe to control sample transport with high precision, ensuring the reagents mix efficiently and that chemical reactions occur under controlled conditions</h3>
-            <h3>For example, patient sample containing a mix of normal and cancerous cells are introduced into the device, where they travel through precisely engineered channels. Within the chip, screening and detection regions identify cancerous biomarkers, while signal translation converts molecular interactions into measurable data. The last step involves signal analysis and data processing enable the identification of cancer cells. (how)</h3>
+            <h3>For example, a patient sample containing a mix of normal and cancerous cells is introduced into the device, where they travel through precisely engineered channels. Within the chip, screening and detection regions identify cancerous biomarkers, while signal translation converts molecular interactions into measurable data. The last step involves signal analysis and data processing to enable the identification of cancer cells.</h3>
             <img src="lap on chip.jpg">
-            <h3>Unlike traditional laboratory setting, LoC devices do not require mechanical pumps to drie liquid flow and instead rely on capillary action. This natural manipulations of external fluids allows for an energy-efficient portable system.</h3>
-            <h3>Additionally, lab-on-a-chip devices can be paired with smartphones, allowing patients or healthcare workers to upload and analyse diagnostic data in real time.</h3>
-            <img src="lap on chip phone.jpg">
+            <div class="image-text-row">
+                <img src="laminaricon.jpg" alt="T2 Relaxation" onclick="openModal('modallaminar')" class="laminaricon">
+                <h3>Unlike traditional laboratory setting, LoC devices do not require mechanical pumps to drie liquid flow and instead rely on capillary action. This natural manipulations of external fluids allows for an energy-efficient portable system.</h3>
+            </div>
+            <div class="laminarimage-text-row">
+                <h3 class="phone">Additionally, lab-on-a-chip devices can be paired with smartphones, allowing patients or healthcare workers to upload and analyse diagnostic data in real time.</h3>
+                <img src="lap on chip phone.jpg">
+            </div>
             <h3>Microchannels can also be coated with functionalised nanomaterials that selectively bind to specific disease biomarkers, enabling the detection of low-concentration biomarkers that conventional assays might miss.</h3>
-            <h3>This can be shown as LoC devices use optical detection to analyse samples, such as fluroescence and absorbance spectroscopy. By detecting changes in light emission and absorption, biomolecular interactions can be actively tracked. Fluorescence-based detection works by exciting specific molecules with a light source, causing them to emit light at a longer wavelength. This emitted signal is then measured, providing a quantifiable indication of a target biomarker. Absorbance spectroscopy works by measuring how much light is absorbed by a sample at specific wavelengths.</h3>
-
+            <div class="laminarimage-text-row">
+                <img src="opticwhite.jpg" alt="T2 Relaxation" onclick="openModal('modalT2')" class="opticwhite">
+                <h3 class="last">Lab-on-a-chip devices use optical detection to analyse samples, such as fluorescence and absorbance spectroscopy. By detecting changes in light emission and absorption, biomolecular interactions can be actively tracked. Fluorescence-based detection works by exciting specific molecules with a light source, causing them to emit light at a longer wavelength. This emitted signal is then measured, providing a quantifiable indication of a target biomarker. Absorbance spectroscopy works by measuring how much light is absorbed by a sample at specific wavelengths.</h3>
+            </div>
+            <div id="modalT1" class="modal" onclick="closeModal('modalT1')">
+                <div class="modal-content">
+                    <h3>Chaotic eddies don’t occur in microfluidics because the small length scales result in a low Reynolds number, meaning viscous forces — the resistance of fluid to flow — completely dominate over inertial forces — the tendency of a fluid to keep moving in the same direction unless acted upon. Since viscosity acts to dissipate energy and smooth out velocity differences, any disturbances in the flow are quickly damped out before they can develop into turbulence.) As a result, fluid moves in parallel streamlines, maintaining laminar flow rather than chaotic mixing</h3>
+                    <img src="laminar.jpg">
+                    <span class="close">Click anywhere to close</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -385,10 +386,10 @@
 
     <section class="lfa" id="lfa">
         <div class="lfa-content">
-            <h2>Lateral flow assay (LFA)</h2>
-            <h3>Nano biosensors are a key advancement in PoC diagnostics, offering rapid and highly sensitive detection of biological markers such as proteins. One example is enzyme-linked immunosorbent assays (ELISA) which is known for its high sensitivity and specificity but is impractical for rapid, on-site testing as it requires specialised equipment, multiple processing steps, and skilled workers. Therefore lateral flow assays (LFAs) offer a simple and inexpensive alternative for diagnostics.</h3>
-            <h3>LFAs are widely used for conditions like malaria and HIV but their sensitivity can be limited making it difficult to detect low-concentration biomarkers in early disease stages. Nanotechnology has enhanced the capabilites of lateral flow assays, incorporating gold, silver, or other nanomaterials to amplify detection signals, allowing for disease identification even at low biomarker concentrations.</h3>
-            <h3>Similar to LoC systems, LFAs ely on capillary action, but instead of using microchannels, they utilise porous materials such as nitrocellulose strips through which liquid samples diffuse evenly across</h3>
+            <h2>Lateral Flow Assay (LFA)</h2>
+            <h3>Nanobiosensors are a key advancement in PoC diagnostics, offering rapid and highly sensitive detection of biological markers such as proteins, DNA fragments, and antigens. Currently, two main diagnostic methods are widely used: enzyme-linked immunosorbent assays (ELISA) and lateral flow assays (LFAs). ELISA is known for its high sensitivity and specificity but is impractical for rapid, on-site testing as it requires specialised equipment, multiple processing steps, and skilled workers. LFAs do offer a simple and inexpensive alternative for point-of-care diagnostics, and while traditional LFAs are widely used for conditions like malaria and HIV, their sensitivity is limited. This makes it difficult to detect low-concentration biomarkers in early disease stages.</h3>
+            <h3>Nanotechnology has enhanced the capabilities of lateral flow assays, incorporating gold, silver, or other nanomaterials to amplify detection signals, allowing for disease identification even at low biomarker concentrations. Gold nanoparticles facilitate this through their unique optical properties. When functionalised with antibodies or DNA probes, these nanoparticles selectively bind to target biomarkers in a sample, creating a highly visible colour change, reducing the risk of false negatives and allowing for clear, reliable results.</h3>
+            <h3>Similar to LoC systems, LFAs rely on capillary action, but instead of using microchannels, they utilise porous materials such as nitrocellulose strips through which liquid samples diffuse evenly across</h3>
             <img src="lateral flow.jpg" class="lfa-image">
             <h3>At the test line, specific antibodies or DNA probes are anchored in place to capture only the target biomarker. When nanoparticles are attached to additional antibodies or DNA strands, they stick to the captured biomarker, forming small clumps at the test site. This accumulation of nanoparticles causes a visible colour change due to a process called plasmon resonance.</h3>
             <div class="image-text-row">
@@ -396,12 +397,6 @@
                 <img src="covidtest.png" class="lfa-small-image">
             </div>
             <h3>While nanoparticle-enhanced biosensors offer improved sensitivity and rapid detection, their ability to quantify biomarker concentrations precisely has its limitations, restricting their use in cases requiring highly specific or continuous measurements. Moreover, maintaining stability and reproducibility across different sample types poses a challenge, as environmental factors such as humidity, pH fluctuations, and non-specific binding can affect signal reliability.</h3>
-        </div>
-    </section>
-
-    <section class="lfaresearch">
-        <div class="lfaresearch-content">
-            <h3>Currently, Yonsei University and Seoul National University are researching the advancement of these needle-free glucose patches, aiming to refine their accuracy and usability for clinical adoption</h3>
         </div>
     </section>
 
@@ -421,26 +416,26 @@
 
     <div class="CGM-images">
         <div class="sticky-container3">
-            <img src="cgmstep1.jpg" alt="Image 1" class="sticky-image3">
-            <img src="cgmstep2.jpg" alt="Image 2" class="sticky-image4">
-            <img src="cgmstep3.jpg" alt="Image 3" class="sticky-image5">
+            <img src="G (3).png" alt="Image 1" class="sticky-image3">
+            <img src="G (4).png" alt="Image 2" class="sticky-image4">
+            <img src="G (5).png" alt="Image 3" class="sticky-image5">
         </div>
         <div class="CGM-content">
-            <h3>Flow on ions towards the electrodes creates an electric osmotic flow.This pulls glucose molecules from ISF toward the cathode.</h3>
+            <h3> These sensors detect glucose molecules through enzyme-coated nanostructures, which generate an electric signal proportional to glucose concentration. </h3>
         </div>
         <div class="CGM-content2">
-            <h3>Instead of using finger pricking to measure glucode levels in the blood, continuous glucose monitors use nanomaterial-based electrochemical sensors to emasure glucose levels in interstitial fluid</h3>
+            <h3>Electrochemical sensors rely on nanoscale electrodes, which enhance surface interactions and allow for more efficient charge transfer when biomarkers bind to the sensor surface.</h3>
         </div>
         <div class="CGM-content3">
-            <h3>Nanosensor is coated with an enzyme called glucose oxidase. This reacts with glucose by oxidation release electrons.These electrons are passed to a nanoscale electrode, which is a tiny conducting surface made of materials like carbon nanotubes or goldnanoparticles</h3>
+            <h3>This allows even minute changes in glucose or lactate levels to be detected.</h3>
         </div>
-    </div>
+    </div>   
 
     <section class="bandages" id="bandages">
         <div class="bandages-content">
             <h2>Smart Dressings</h2>
-            <h3>smart bandages are upgraded dressings that not only cover wounds but also monitor them. Nanomaterial-based sensors can detect pH shifts, bacterial growth, and inflammatory responses.</h3>
-            <img scr="smart band aid.jpg">
+            <h3>Smart bandages are upgraded dressings that not only cover wounds but also monitor them. Nanomaterial-based sensors can detect pH shifts, bacterial growth, and inflammatory responses.</h3>
+            <img src="smart band aid.jpg">
             <h3>These physiological changes can be measured using colourimetric nanosensors, changing colour in response to variations in acidity or bacterial metabolites, making infection visually detectable. In addition, electrochemical sensors in these bandages can detect bacterial activity through ion exchange reactions, where bacterial metabolism alters the local ionic environment, producing measurable electrical changes. These interactions rely on the principles of electrochemical signal transduction, where nanosensors convert biochemical activity into quantifiable electrical signals.</h3>
             <h3>While smart bandages are still in the experimental stage, researchers at Tufts University and the University of Bath have been testing prototypes with the potential for earlier detection and recovery, reducing infection-related complications.</h3>
             <h3> Similarly, smart patches embedded with nanosensors are being designed to monitor hydration levels by analysing ion concentrations in sweat, providing real-time feedback on electrolyte balance and dehydration risk. Sweat is diffused through porous nanostructures toward sensor sites for biochemical analysis, eliminating the need for mechanical pumps. Optical sensing techniques, such as surface plasmon resonance and fluorescence spectroscopy, further enhance detection capabilities by analysing how light interacts with nanomaterials</h3>
@@ -464,14 +459,12 @@
             <h2>Nanopore Sequencing</h2>
             <h3>Genetic testing has traditionally relied on PCR and fluorescence-based assays to detect specific DNA sequences. While these methods are highly sensitive, they require multiple amplification steps to detect low-abundance genetic material, increasing the risk of contamination, false positives, and signal degradation. Another major challenge lies in efficiently isolating target DNA from biological samples. Standard techniques such as centrifugation, filtration, or chemical precipitation require specialised laboratory equipment and long processing times</h3>
             <h3>Unlike PCR, which amplifies DNA through multiple thermal cycles before detection, nnopore sequencing can directly analyse genetic material in real-time without amplification. This not only reduces processing time but also minimises contamination reisks associated with multiple handeling steps.</h3>
+            <h3>Nanopore sequencing works by passing a single strand of DNA or RNA through a nanoscale pore embedded in an electrically insulating membrane.</h3>
         </div>
     </section>
 
     <div class="nanopore-videos">
         <div class="sticky-container4">
-            <video autoplay muted loop class="sticky-video2 video5">
-                <source src="Untitled design (3).mp4" type="video/mp4">
-            </video>
             <video autoplay muted loop class="sticky-video2 video6">
                 <source src="Untitled design (4).mp4" type="video/mp4">
             </video>
@@ -481,21 +474,16 @@
             <video autoplay muted loop class="sticky-video2 video8">
                 <source src="Untitled design (5).mp4" type="video/mp4">
             </video>
-        </div>
-        <div class="nanopore-content1">
-            <h3>Nanopore is placed between two chambers containing a salt solution (positive and negative ions).</h3>
-        </div>
         <div class="nanopore-content2">
-            <h3>Electrodes are placed in each chamber, and a voltage is applied across the nanopore. </h3>
+            <h3>An external voltage is applied by placing two electrodes on opposite sides of the nanopore membrane, generating an electric field that exerts force on the negatively charged DNA, pulling it through the nanopore in a process known as electrophoretic transport.</h3>
             <h3>This causes ion in the solution to move, creating an electric current</h3>
         </div>
         <div class="nanopore-content3">
-            <h3>DNA is negatively charged due to its phosphate backbone. Therefore when in the presence of an electric field, it will move toward the positive electrode. (coulombs law?)
-                When DNA enters the pore, it partially blocks the flow of ions, changing the resistance and altering the current.
-                </h3>
+            <h3>DNA is negatively charged due to its phosphate backbone. Therefore when in the presence of an electric field, it will move toward the positive electrode. As the DNA or RNA molecule moves through the pore, it partially obstructs the ionic current flowing through the nanopore.
+            </h3>
         </div>
         <div class="nanopore-content4">
-            <h3>Each DNA base has a different size, shape and electrical charge distribution. This affects how much the base blocks the ion flow. This produces a unique signal for each base</h3>
+            <h3>Each nucleotide has a unique size, charge distribution, and molecular structure, which causes distinct disruptions in the electrical current. These disruptions create a unique signal pattern, allowing the nucleotide sequence to be identified in real-time. As this process relies purely on changes in ion flow rather than amplification or fluorescent labelling, it enables fast, direct sequencing with minimal sample preparation.</h3>
         </div>
     </div>
 
@@ -510,8 +498,10 @@
     <section class="Nanobeads" id="nanobeads">
         <div class="nanobeads-content">
             <h2>DNA Magnetic Nanobeads</h2>
-            <h3>DNA magnetic nanobeads offer a more efficient and selective method for genetic testing compared to traditional PCR by simplifying DNA isolation and enabling highly specific detection of genetic sequences.  Unlike conventional extraction methods that involve multiple purification steps, nanobeads enable rapid and direct DNA separation from complex biological samples.</h3>
+            <h3>DNA magnetic nanobeads offer a more efficient and selective method for genetic testing compared to traditional PCR by simplifying DNA isolation and enabling highly specific detection of genetic sequences.</h3>
             <img src="applications of nanobeads.jpg" alt="nanobeads" class="nanobead-img">
+            <h3>These nanobeads are engineered with a superparamagnetic core, typically composed of iron oxide (Fe₃O₄), which only becomes magnetised in the presence of an external magnetic field. Unlike conventional extraction methods that involve multiple purification steps, nanobeads enable rapid and direct DNA separation from complex biological samples.</h3>
+            <img src="magnetic icon.jpg">
         </div>
     </section>
 
@@ -524,21 +514,22 @@
             <img src="nanobead step 3.jpg" alt="Sticky Image" class="sticky-image8">
         </div>
         <div class="nanobead-content1">
-            <h2>Nanobeads added to DNA sample</h2>
             <h3>The surface of each nanobead is functionised with single-stranded DNA probe, which are designed to selectively hybridise with complementary DNA sequences in a sample</h3>
         </div>
         <div class="nanobead-content2">
-            <h2>Nanobeads dont clump together due to their Superparamagnetic core (Iron oxide)</h2>
+            <h3>When the target sequence is present, hydrogen bonding between complementary DNA bases enables the formation of a stable DNA-bead complex. This selective binding ensures high specificity, reducing the risk of false positives.</h3>
         </div>
         <div class="nanobead-content3">
-            <h2>Hydrogen bonding</h2>
-            <h3>When the target sequence is present, hydrogen bonding between complementary DNA bases enables the formation of a stable DNA-bead complex. This selective binding ensures high specificity, reducing rik of false positives</h3>
-        </div>
-        <div class="nanobead-content4">
-            <h2>Magnetic field applied</h2>
             <h3>Once the DNA-bead complex is formed, an external magnetic field is applied, allowing for rapid efficient speration of the bound DNA from the rest of the sample</h3>
         </div>
     </div>
+
+    <section class="Nanobeads2" id="nanobeads">
+        <div class="nanobeads2-content">
+            <h3>Now isolated, the DNA-bead complex can be subjected to further analysis, such as PCR or sequencing, to identify genetic mutations or pathogens. This technique has proven particularly valuable for detecting rare genetic disorders, identifying infectious agents, and performing high-sensitivity diagnostics in low-resource settings.</h3>
+            <h3>Despite the benefits, DNA magnetic nanobead has its drawbacks, as their dependence on precise magnetic field control introduces technical complexity. Inconsistent probe functionalisation or unexpected interactions with non-target biomolecules can lead to false positives. Furthermore, large-scale production of high-purity nanobeads at an affordable cost is still an area requiring critical development before full clinical integration.
+            </h3>
+    </section>
 
     <section class="risks" id="risks">
         <div class="risks-content">
@@ -549,6 +540,7 @@
             <h3>The desirable properties of nanoparticles, like their small size and high surface reactivity, also pose a threat to homeostasis, as their long-term effects on biological systems have not been fully characterised. The possibility of nanoparticles interacting unpredictably with DNA, proteins, or cellular pathways introduces potential risks of cytotoxicity, genotoxicity, or immune dysregulation. Despite the growing use of nanomedicine, comprehensive safety assessments are still in development, so informed consent and transparency of the potential risks associated with nanoparticle-based treatments are necessary. Additionally, researchers must balance innovation with caution and ensure rigorous safety testing before implementation.
             </h3>
             <h3>The use of mice in nanoparticle methodologies also raises ethical concerns. Mice are commonly used as model organisms to evaluate the efficacy and potential toxicity of nanoparticle-based contrast agents, as their biological systems provide critical insight into how these materials distribute, accumulate, and interact with tissues. To ensure safety for human applications and understand long-term exposure, animal models remain necessary; however, it is crucial to push toward the development of in vitro models to minimise reliance on animal testing.</h3>
+            <img src="injected.jpg">
             <h3>While nanoparticles have significantly advanced clinical medicine, their development must be guided by ethical responsibility, stringent regulation, and an obligation to patient and environmental safety.</h3>
         </div>
     </section>
@@ -586,11 +578,11 @@
                     <li><a href="https://www.aapm.org/meetings/02AM/pdf/8465-78776.pdf" target="_blank">C. J. Thompson, "PET Imaging Physics and Instrumentation," Proceedings of the 44th Annual Meeting of the American Association of Physicists in Medicine, (2002), pp. 1–20.</a></li>
                     <li><a href="https://nanoporetech.com/platform/technology" target="_blank">"Nanopore sequencing technology," Oxford Nanopore Technologies. Accessed  21 January 2025.</a></li>
                     <li><a href="https://doi.org/10.1146/annurev-anchem-060908-155136" target="_blank">B.A. Kairdolf et al., "Semiconductor Quantum Dots for Bioimaging and Biodiagnostic Applications," Annu. Rev. Anal. Chem., 6 (2013), pp. 143–162.</a></li>
-                    <li><a href="https://doi.org/10.1021/acs.accounts.5b00316" target="_blank"></a>K.T. Nguyen and Y. Zhao, "Engineered Hybrid Nanoparticles for On-Demand Diagnostics and Therapeutics," Acc. Chem. Res., 48, 12 (2015), pp. 3016–3025.</li>
+                    <li><a href="10.1021/acs.accounts.5b00316" target="_blank">K.T. Nguyen and Y. Zhao, "Engineered Hybrid Nanoparticles for On-Demand Diagnostics and Therapeutics," Acc. Chem. Res., 48, 12 (2015), pp. 3016–3025.</a></li>
                     <li><a href="https://www.the-scientist.com/a-noninvasive-glucose-monitor-for-managing-diabetes-71225" target="_blank">K. Williams, "A noninvasive glucose monitor for managing diabetes," The Scientist, (2023). Accessed 10 January 2025.</a></li>
                     <li><a href="https://www.mobihealthnews.com/content/mc10-researchers-korea-build-prototype-glucose-management-peel-and-stick-patch" target="_blank">J. Comstock, "MC10 researchers in Korea build prototype glucose-management peel-and-stick patch," MobiHealthNews, (2016). Accessed 29 December 2024.</a></li>
-                    <li><a href="https://www.bath.ac.uk/announcements/clinical-trial-of-infection-detecting-bandages-begins/" target="_blank"></a>"Clinical trial of infection-detecting bandages begins," University of Bath, (2016). Accessed 7 February 2025.</li>
-                    <li><a href="https://www.mdpi.com/2079-6374/12/3/139" target="_blank"></a>D.T. Phan et al., "A Flexible, Wearable, and Wireless Biosensor Patch with Internet of Medical Things Applications," Biosensors, 12, 3 (2022), 139.</li>
+                    <li><a href="https://www.bath.ac.uk/announcements/clinical-trial-of-infection-detecting-bandages-begins/" target="_blank">"Clinical trial of infection-detecting bandages begins," University of Bath, (2016). Accessed 7 February 2025.</a></li>
+                    <li><a href="https://www.mdpi.com/2079-6374/12/3/139" target="_blank">D.T. Phan et al., "A Flexible, Wearable, and Wireless Biosensor Patch with Internet of Medical Things Applications," Biosensors, 12, 3 (2022), 139.</a></li>
 
                 </ul>
             </div>
