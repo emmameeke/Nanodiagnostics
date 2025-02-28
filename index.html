@@ -97,7 +97,7 @@
             </div>
             <img src="properties.jpg" class="shrink-image">
         </div>
-        <div id="left-popup" class="popup10">
+        <div id="left-popup" class="popup10" onclick="closePopup()">
             <div class="modal-content">
                 <h2>Magnetic nanoparticles are superparamagnetic</h2>
                 <h3>This means they only become magnetised in the presence of an external magnetic field.</h3>
@@ -124,16 +124,16 @@
                     <h3>Magnet Applied</h3>
                     <h3>Magnet Removed</h3>
                 </div>
-                <span class="close" onclick="closePopup()">Click anywhere to close</span>
+                <span class="close">Click anywhere to close</span>
             </div>
         </div>
     
-        <div id="right-popup" class="popup10">
+        <div id="right-popup" class="popup10" onclick="closePopup()">
             <div class="modal-content">
                 <h3>Nanoparticles, particularly those made of noble metals like gold and silver, exhibit unique optical properties due to a phenomenon known as localised surface plasmon resonance.</h3>
                 <h3>Localised surface plasmon resonance occurs when light interacts with free electrons on the surface of nanoparticles, causing them to oscillate collectively. The size and shape of the nanoparticle determine the wavelength of light it absorbs and scatters. Gold nanoparticles used in lateral flow assays are typically around 20–40 nm in diameter, allowing them to absorb blue-green light (~450–550 nm) and reflect red light (~600–700 nm). When these nanoparticles bind to a target biomarker and cluster together, the spacing between them decreases, altering how their surface electrons interact with light.</h3>
                 <img src="quantumn dot grpah.png">
-                <span class="close" onclick="closePopup()">Click anywhere to close</span>
+                <span class="close">Click anywhere to close</span>
             </div>
         </div>
     </section>
@@ -222,13 +222,13 @@
         <div id="modalT2" class="modal" onclick="closeModal('modalT2')">
             <div class="modal-content">
                 <h3>SPIONs are used as contrast agents due to their strong magnetic susceptibility which influences the relaxation times of nearby hydrogen nuclei. They exhibit superparamagnetism, meaning they align with an external magnetic field but do not retain magnetisation once the field is removed, preventing long-range magnetic interactions. They are a type of T2 contrast agent and are typically 5-50 nm in size with an iron oxide core and a coating of biocompatible, water-soluble materials, often polymers like Dextran, to enhance targeting efficiency. </h3>
-                <img src="spionmri.jpg">
+                <img src="spionmri.jpg" class="yay">
                 <h3>When placed within an external magnetic field, SPIONs create local variations in the surrounding magnetic field which cause nearby hydrogen nuclei to resonate at slightly different frequencies. Because of this, the nuclei lose synchronisation more quickly, causing a faster decay of the MRI signal.</h3>
                 <h3>Intravenously injected SPIONs can be designed for active or passive targeting. 
                     Passive targeting results in the accumulation of SPIONs primarily in the spleen and liver.
                     Active targeting involves SPIONs functionalised with ligands/antibodies to bind to specific cells such as tumours.
                 </h3>
-                <img src="target.jpg">
+                <img src="target.jpg" class="yay">
                 <span class="close">Click anywhere to close</span>
             </div>
         </div>
@@ -284,16 +284,16 @@
             <h3>PET is a powerful imaging modality that provides insight into metabolic processes within tissues. Unlike anatomical imaging techniques such as CT and MRI which visualise structural details, PET enables the detection of biochemical processes at a molecular level. This allows diseases to be detected before physical abnormalities appear.</h3>
             <h3>The main components of a PET scanner include the gantry, which houses the detector system, scintillation crystals that convert incoming gamma photons into light, and photomultiplier tubes that transform this light into electrical signals.</h3>
             <div class="petimage-text-row">
-                <img src="radioactive tracer.jpg" class="lfa-small-image">
+                <img src="radioactive tracer.jpg" class="tracer-image">
                 <div class="petheaders">
                     <h3>Before the scan, the patient is injected with a radioactive tracer, usually fluorodeoxyglucose, which has a chemical structure similar to that of glucose. The tracer is taken up by metabolising cells and accumulates in tissues. After waiting for the tracer to be distributed through the body, the patient is placed in the PET scanner. The radiation emitted by the tracer will then be detected. This process is beta-plus decay, where a positron is emitted.</h3>
-                    <img src="betaicon.jpg">
+                    <img src="betaicon.jpg" onclick="openModal('modalbeta')" class="beta-icon">
                 </div>
             </div>
         </div>
         <div id="modalbeta" class="modal" onclick="closeModal('modalbeta')">
             <div class="modal-content">
-                <h3>Paramagnetic nanoparticles, such as gadolinium-based nanostructures, enhance T1 relaxation. These materials contain unpaired electrons, which generate fluctuating local magnetic fields that interact with nearby hydrogen nuclei. This interaction increases the rate at which protons realign with the external field after excitation. Consequently, T1-weighted MRI images show areas with paramagnetic nanoparticles as brighter regions.</h3>
+                <h3>Beta-plus decay occurs when a proton in the nucleus of a radioactive atom transforms into a neutron, emitting a positron and a neutrino. The emitted positron travels a short distance in the tissue before encountering an electron, leading to their mutual annihilation and the production of two gamma photons. These gamma photons travel in nearly opposite directions and are detected by the PET scanner to create images.</h3>
                 <span class="close">Click anywhere to close</span>
             </div>
         </div>
@@ -346,31 +346,32 @@
         <div class="loc2-content">
             <div class="laminarimage-text-row">
                 <h3 class="expand">The core principle behind lab-on-a-chip technology is microfluidics, the precise control of fluids in microscale environments. At this small scale, fluids exhibit the unique characteristics of laminar flow, where fluids move in smooth, predictable layers without turbulence. Unlike in larger fluidic systems, where mixing occurs through chaotic eddies, microfluidic systems rely on diffusion — the gradual movement of molecules from areas of high to low concentration.</h3>
-                <img src="laminaricon.jpg" alt="T2 Relaxation" onclick="openModal('modallaminar')" class="laminaricon">
+                <img src="laminaricon.jpg" alt="Laminar Flow" onclick="openModal('modallaminar')" class="laminaricon">
             </div>
-            <h3>This makes it possibe to control sample transport with high precision, ensuring the reagents mix efficiently and that chemical reactions occur under controlled conditions</h3>
+            <h3>This makes it possible to control sample transport with high precision, ensuring the reagents mix efficiently and that chemical reactions occur under controlled conditions</h3>
             <h3>For example, a patient sample containing a mix of normal and cancerous cells is introduced into the device, where they travel through precisely engineered channels. Within the chip, screening and detection regions identify cancerous biomarkers, while signal translation converts molecular interactions into measurable data. The last step involves signal analysis and data processing to enable the identification of cancer cells.</h3>
-            <img src="lap on chip.jpg">
+            <img src="lap on chip.jpg" alt="Lab on Chip">
             <div class="image-text-row">
-                <img src="laminaricon.jpg" alt="T2 Relaxation" onclick="openModal('modallaminar')" class="laminaricon">
-                <h3>Unlike traditional laboratory setting, LoC devices do not require mechanical pumps to drie liquid flow and instead rely on capillary action. This natural manipulations of external fluids allows for an energy-efficient portable system.</h3>
+                <img src="laminaricon.jpg" alt="Laminar Flow" onclick="openModal('modallaminar')" class="laminaricon">
+                <h3>Unlike traditional laboratory settings, LoC devices do not require mechanical pumps to drive liquid flow and instead rely on capillary action. This natural manipulation of external fluids allows for an energy-efficient portable system.</h3>
             </div>
             <div class="laminarimage-text-row">
                 <h3 class="phone">Additionally, lab-on-a-chip devices can be paired with smartphones, allowing patients or healthcare workers to upload and analyse diagnostic data in real time.</h3>
-                <img src="lap on chip phone.jpg">
+                <img src="lap on chip phone.jpg" alt="Lab on Chip with Phone">
             </div>
             <h3>Microchannels can also be coated with functionalised nanomaterials that selectively bind to specific disease biomarkers, enabling the detection of low-concentration biomarkers that conventional assays might miss.</h3>
             <div class="laminarimage-text-row">
-                <img src="opticwhite.jpg" alt="T2 Relaxation" onclick="openModal('modalT2')" class="opticwhite">
+                <img src="opticwhite.jpg" alt="Optical Detection" onclick="openModal('right-popup')" class="opticwhite">
                 <h3 class="last">Lab-on-a-chip devices use optical detection to analyse samples, such as fluorescence and absorbance spectroscopy. By detecting changes in light emission and absorption, biomolecular interactions can be actively tracked. Fluorescence-based detection works by exciting specific molecules with a light source, causing them to emit light at a longer wavelength. This emitted signal is then measured, providing a quantifiable indication of a target biomarker. Absorbance spectroscopy works by measuring how much light is absorbed by a sample at specific wavelengths.</h3>
             </div>
-            <div id="modalT1" class="modal" onclick="closeModal('modalT1')">
+            <div id="modallaminar" class="modal" onclick="closeModal('modallaminar')">
                 <div class="modal-content">
-                    <h3>Chaotic eddies don’t occur in microfluidics because the small length scales result in a low Reynolds number, meaning viscous forces — the resistance of fluid to flow — completely dominate over inertial forces — the tendency of a fluid to keep moving in the same direction unless acted upon. Since viscosity acts to dissipate energy and smooth out velocity differences, any disturbances in the flow are quickly damped out before they can develop into turbulence.) As a result, fluid moves in parallel streamlines, maintaining laminar flow rather than chaotic mixing</h3>
-                    <img src="laminar.jpg">
+                    <h3>Chaotic eddies don’t occur in microfluidics because the small length scales result in a low Reynolds number, meaning viscous forces — the resistance of fluid to flow — completely dominate over inertial forces — the tendency of a fluid to keep moving in the same direction unless acted upon. Since viscosity acts to dissipate energy and smooth out velocity differences, any disturbances in the flow are quickly damped out before they can develop into turbulence. As a result, fluid moves in parallel streamlines, maintaining laminar flow rather than chaotic mixing.</h3>
+                    <img src="laminar.jpg" alt="Laminar Flow Explanation">
                     <span class="close">Click anywhere to close</span>
                 </div>
             </div>
+            
         </div>
     </section>
 
