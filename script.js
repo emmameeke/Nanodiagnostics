@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const sectionVideosTop = sectionVideos.offsetTop;
     const sectionVideosHeight = sectionVideos.offsetHeight;
     // Calculate breakpoints for transitions
-    const transition1 = sectionVideosTop + sectionVideosHeight * 0.25;
-    const transition2 = sectionVideosTop + sectionVideosHeight * 0.50;
-    const transition3 = sectionVideosTop + sectionVideosHeight * 0.75;
+    const transition1 = sectionVideosTop + sectionVideosHeight * 0.06;
+    const transition2 = sectionVideosTop + sectionVideosHeight * 0.40;
+    const transition3 = sectionVideosTop + sectionVideosHeight * 0.56;
 
     videos.forEach(video => video.style.opacity = "0"); // Hide all videos by default
 
@@ -107,6 +107,30 @@ function showPopup(side) {
 function closePopup() {
   document.getElementById('left-popup').style.display = 'none';
   document.getElementById('right-popup').style.display = 'none';
+}
+
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'flex';
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
+
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'flex';
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
+
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'flex';
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
 }
 
 function openModal(modalId) {
